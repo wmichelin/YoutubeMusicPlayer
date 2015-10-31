@@ -1,13 +1,23 @@
-
 var SongList = require('./songlist.jsx');
 var React = require('react');
 var Sidebar = require('react-sidebar');
 
+var styles = {
+  contentHeaderMenuLink: {
+    textDecoration: 'none',
+    color: 'white',
+    padding: 8
+  },
+  content: {
+    padding: '16px'
+  }
+}
+
 var App = React.createClass({
   getInitialState () {
     return {
-      sidebarOpen: true,
-      sidebarDocked: true
+      docked: false,
+      open: false
     };
   },
 
