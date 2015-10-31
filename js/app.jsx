@@ -5,7 +5,7 @@ var Sidebar = require('react-sidebar');
 var styles = {
   contentHeaderMenuLink: {
     textDecoration: 'none',
-    color: 'black',
+    color: 'white',
     padding: 8
   },
   content: {

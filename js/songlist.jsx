@@ -39,7 +39,7 @@ var SongList = React.createClass({
     // there's probably a more decoupled way to do this
     // we don't want to assume that the song class will provide column names
     var songArray = [
-      <Song key={-1}/>
+      
     ];
 
     this
@@ -82,7 +82,7 @@ var SearchBar = React.createClass({
   },
   render: function() {
     return (
-      <input type="text" onChange={this.props.onUserInput} onKeyPress={this.handleKeyPress} value={this.props.value}/>
+      <input className="search-bar" type="text" onChange={this.props.onUserInput} onKeyPress={this.handleKeyPress} value={this.props.value}/>
     );
   }
 });

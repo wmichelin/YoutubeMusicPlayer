@@ -6,7 +6,7 @@ var Sidebar = require('react-sidebar');
 var styles = {
   contentHeaderMenuLink: {
     textDecoration: 'none',
-    color: 'black',
+    color: 'white',
     padding: 8
   },
   content: {
@@ -218,11 +218,13 @@ var Song = React.createClass({displayName: "Song",
   render: function() {
     return (
       React.createElement("div", {className: "song-wrapper"}, 
-        React.createElement("div", {className: "song-title"}, 
-          this.props.title
-        ), 
-        React.createElement("div", {className: "song-artist"}, 
-          this.props.artist
+        React.createElement("div", {className: "song-text-wrapper"}, 
+          React.createElement("div", {className: "song-title"}, 
+            this.props.title
+          ), 
+          React.createElement("div", {className: "song-artist"}, 
+            this.props.artist
+          )
         ), 
         React.createElement("img", {className: "album-image", src: this.props.image_url})
       )
@@ -255,11 +257,16 @@ module.exports = {
       var formattedResults = [];
       var tracksArray = results.tracks;
       tracksArray.items.forEach(function(track){
+        var url = "";
+        if (track.album.images.length > 0) {
+          url = track.album.images[0].url;
+        }
+
         formattedResults.push({
           key: track.id,
           title: track.name,
           artist_name: track.artists[0].name,
-          image_url: track.album.images[0].url
+          image_url: url
         });
       });
 
@@ -313,7 +320,7 @@ var SongList = React.createClass({displayName: "SongList",
     // there's probably a more decoupled way to do this
     // we don't want to assume that the song class will provide column names
     var songArray = [
-      React.createElement(Song, {key: -1})
+      
     ];
 
     this
@@ -356,7 +363,7 @@ var SearchBar = React.createClass({displayName: "SearchBar",
   },
   render: function() {
     return (
-      React.createElement("input", {type: "text", onChange: this.props.onUserInput, onKeyPress: this.handleKeyPress, value: this.props.value})
+      React.createElement("input", {className: "search-bar", type: "text", onChange: this.props.onUserInput, onKeyPress: this.handleKeyPress, value: this.props.value})
     );
   }
 });

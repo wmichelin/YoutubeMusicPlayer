@@ -20,11 +20,16 @@ module.exports = {
       var formattedResults = [];
       var tracksArray = results.tracks;
       tracksArray.items.forEach(function(track){
+        var url = "";
+        if (track.album.images.length > 0) {
+          url = track.album.images[0].url;
+        }
+
         formattedResults.push({
           key: track.id,
           title: track.name,
           artist_name: track.artists[0].name,
-          image_url: track.album.images[0].url
+          image_url: url
         });
       });
 
