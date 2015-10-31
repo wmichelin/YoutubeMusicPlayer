@@ -302,6 +302,7 @@ var SongList = React.createClass({displayName: "SongList",
     });
   },
   onEnterKeyPress: function(event) {
+    event.preventDefault();
     songSearchAPI.executeQuery(this.state.queryString).done(this.updateSongList);
   },
   updateSongList: function(results) {
@@ -320,7 +321,7 @@ var SongList = React.createClass({displayName: "SongList",
     // there's probably a more decoupled way to do this
     // we don't want to assume that the song class will provide column names
     var songArray = [
-      
+
     ];
 
     this
@@ -363,7 +364,9 @@ var SearchBar = React.createClass({displayName: "SearchBar",
   },
   render: function() {
     return (
-      React.createElement("input", {className: "search-bar", type: "text", onChange: this.props.onUserInput, onKeyPress: this.handleKeyPress, value: this.props.value})
+      React.createElement("form", {action: "/"}, 
+        React.createElement("input", {className: "search-bar", type: "text", onChange: this.props.onUserInput, onKeyPress: this.handleKeyPress, value: this.props.value})
+      )
     );
   }
 });
