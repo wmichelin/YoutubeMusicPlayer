@@ -1,4 +1,6 @@
 #YoutubeMusicPlayer
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/wmichelin/bookmarkhotkeys/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
 This project was created for fun, as well as to try and better understand the React.js framework. Along the way, I inadvertantly learned about using
 
 * [gulp](http://gulpjs.com/)
