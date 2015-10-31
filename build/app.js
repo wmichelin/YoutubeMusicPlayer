@@ -1,4 +1,4 @@
-(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({"/Users/wmichelin/youtube-api-testing/js/app.jsx":[function(require,module,exports){
+(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({"/Users/wmichelin/YoutubeMusicPlayer/js/app.jsx":[function(require,module,exports){
 var SongList = require('./songlist.jsx');
 var React = require('react');
 var Sidebar = require('react-sidebar');
@@ -98,7 +98,7 @@ var App = React.createClass({displayName: "App",
 
 module.exports = App;
 
-},{"./songlist.jsx":"/Users/wmichelin/youtube-api-testing/js/songlist.jsx","react":"/Users/wmichelin/youtube-api-testing/node_modules/react/react.js","react-sidebar":"/Users/wmichelin/youtube-api-testing/node_modules/react-sidebar/dist-modules/index.js"}],"/Users/wmichelin/youtube-api-testing/js/main.jsx":[function(require,module,exports){
+},{"./songlist.jsx":"/Users/wmichelin/YoutubeMusicPlayer/js/songlist.jsx","react":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/react.js","react-sidebar":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react-sidebar/dist-modules/index.js"}],"/Users/wmichelin/YoutubeMusicPlayer/js/main.jsx":[function(require,module,exports){
 var React = require('react');
 var ReactDOM = require('react-dom');
 // var HelloWorld = require('./helloworld.jsx');
@@ -116,7 +116,7 @@ ReactDOM.render(
 //dev tools
 window.React = React;
 
-},{"./app.jsx":"/Users/wmichelin/youtube-api-testing/js/app.jsx","./song.jsx":"/Users/wmichelin/youtube-api-testing/js/song.jsx","./songlist.jsx":"/Users/wmichelin/youtube-api-testing/js/songlist.jsx","react":"/Users/wmichelin/youtube-api-testing/node_modules/react/react.js","react-dom":"/Users/wmichelin/youtube-api-testing/node_modules/react-dom/index.js"}],"/Users/wmichelin/youtube-api-testing/js/song-provider.js":[function(require,module,exports){
+},{"./app.jsx":"/Users/wmichelin/YoutubeMusicPlayer/js/app.jsx","./song.jsx":"/Users/wmichelin/YoutubeMusicPlayer/js/song.jsx","./songlist.jsx":"/Users/wmichelin/YoutubeMusicPlayer/js/songlist.jsx","react":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/react.js","react-dom":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react-dom/index.js"}],"/Users/wmichelin/YoutubeMusicPlayer/js/song-provider.js":[function(require,module,exports){
 var SongProvider = (function(){
 
   var getSongs = function() {
@@ -136,7 +136,7 @@ var SongProvider = (function(){
 
 module.exports = SongProvider
 
-},{}],"/Users/wmichelin/youtube-api-testing/js/song.jsx":[function(require,module,exports){
+},{}],"/Users/wmichelin/YoutubeMusicPlayer/js/song.jsx":[function(require,module,exports){
 var React = require('react');
 
 var Song = React.createClass({displayName: "Song",
@@ -179,7 +179,7 @@ var Song = React.createClass({displayName: "Song",
 
 module.exports = Song;
 
-},{"react":"/Users/wmichelin/youtube-api-testing/node_modules/react/react.js"}],"/Users/wmichelin/youtube-api-testing/js/songSearchAPI.js":[function(require,module,exports){
+},{"react":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/react.js"}],"/Users/wmichelin/YoutubeMusicPlayer/js/songSearchAPI.js":[function(require,module,exports){
 var _ = require('underscore');
 
 module.exports = {
@@ -223,7 +223,7 @@ module.exports = {
   }
 }
 
-},{"underscore":"/Users/wmichelin/youtube-api-testing/node_modules/underscore/underscore.js"}],"/Users/wmichelin/youtube-api-testing/js/songlist.jsx":[function(require,module,exports){
+},{"underscore":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/underscore/underscore.js"}],"/Users/wmichelin/YoutubeMusicPlayer/js/songlist.jsx":[function(require,module,exports){
 var React = require('react');
 var Song = require('./song.jsx');
 var SongProvider = require('./song-provider.js');
@@ -322,7 +322,7 @@ var SearchBar = React.createClass({displayName: "SearchBar",
 
 module.exports = SongList;
 
-},{"./song-provider.js":"/Users/wmichelin/youtube-api-testing/js/song-provider.js","./song.jsx":"/Users/wmichelin/youtube-api-testing/js/song.jsx","./songSearchAPI.js":"/Users/wmichelin/youtube-api-testing/js/songSearchAPI.js","react":"/Users/wmichelin/youtube-api-testing/node_modules/react/react.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js":[function(require,module,exports){
+},{"./song-provider.js":"/Users/wmichelin/YoutubeMusicPlayer/js/song-provider.js","./song.jsx":"/Users/wmichelin/YoutubeMusicPlayer/js/song.jsx","./songSearchAPI.js":"/Users/wmichelin/YoutubeMusicPlayer/js/songSearchAPI.js","react":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/react.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js":[function(require,module,exports){
 // shim for using process in browser
 
 var process = module.exports = {};
@@ -415,12 +415,12 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}],"/Users/wmichelin/youtube-api-testing/node_modules/react-dom/index.js":[function(require,module,exports){
+},{}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react-dom/index.js":[function(require,module,exports){
 'use strict';
 
 module.exports = require('react/lib/ReactDOM');
 
-},{"react/lib/ReactDOM":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactDOM.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react-sidebar/dist-modules/index.js":[function(require,module,exports){
+},{"react/lib/ReactDOM":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactDOM.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react-sidebar/dist-modules/index.js":[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, '__esModule', {
@@ -435,7 +435,7 @@ var _sidebar2 = _interopRequireDefault(_sidebar);
 
 exports['default'] = _sidebar2['default'];
 module.exports = exports['default'];
-},{"./sidebar":"/Users/wmichelin/youtube-api-testing/node_modules/react-sidebar/dist-modules/sidebar.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react-sidebar/dist-modules/sidebar.js":[function(require,module,exports){
+},{"./sidebar":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react-sidebar/dist-modules/sidebar.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react-sidebar/dist-modules/sidebar.js":[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, '__esModule', {
@@ -855,7 +855,7 @@ Sidebar.defaultProps = {
 
 exports['default'] = Sidebar;
 module.exports = exports['default'];
-},{"react":"/Users/wmichelin/youtube-api-testing/node_modules/react/react.js","react-dom":"/Users/wmichelin/youtube-api-testing/node_modules/react-dom/index.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/AutoFocusUtils.js":[function(require,module,exports){
+},{"react":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/react.js","react-dom":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react-dom/index.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/AutoFocusUtils.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -892,7 +892,7 @@ var AutoFocusUtils = {
 };
 
 module.exports = AutoFocusUtils;
-},{"./ReactMount":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactMount.js","./findDOMNode":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/findDOMNode.js","fbjs/lib/focusNode":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/focusNode.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/BeforeInputEventPlugin.js":[function(require,module,exports){
+},{"./ReactMount":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactMount.js","./findDOMNode":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/findDOMNode.js","fbjs/lib/focusNode":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/focusNode.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/BeforeInputEventPlugin.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015 Facebook, Inc.
  * All rights reserved.
@@ -1298,7 +1298,7 @@ var BeforeInputEventPlugin = {
 };
 
 module.exports = BeforeInputEventPlugin;
-},{"./EventConstants":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/EventConstants.js","./EventPropagators":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/EventPropagators.js","./FallbackCompositionState":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/FallbackCompositionState.js","./SyntheticCompositionEvent":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/SyntheticCompositionEvent.js","./SyntheticInputEvent":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/SyntheticInputEvent.js","fbjs/lib/ExecutionEnvironment":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/ExecutionEnvironment.js","fbjs/lib/keyOf":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/keyOf.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/CSSProperty.js":[function(require,module,exports){
+},{"./EventConstants":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/EventConstants.js","./EventPropagators":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/EventPropagators.js","./FallbackCompositionState":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/FallbackCompositionState.js","./SyntheticCompositionEvent":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/SyntheticCompositionEvent.js","./SyntheticInputEvent":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/SyntheticInputEvent.js","fbjs/lib/ExecutionEnvironment":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/ExecutionEnvironment.js","fbjs/lib/keyOf":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/keyOf.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/CSSProperty.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -1438,7 +1438,7 @@ var CSSProperty = {
 };
 
 module.exports = CSSProperty;
-},{}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/CSSPropertyOperations.js":[function(require,module,exports){
+},{}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/CSSPropertyOperations.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -1616,7 +1616,7 @@ ReactPerf.measureMethods(CSSPropertyOperations, 'CSSPropertyOperations', {
 
 module.exports = CSSPropertyOperations;
 }).call(this,require('_process'))
-},{"./CSSProperty":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/CSSProperty.js","./ReactPerf":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactPerf.js","./dangerousStyleValue":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/dangerousStyleValue.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/ExecutionEnvironment":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/ExecutionEnvironment.js","fbjs/lib/camelizeStyleName":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/camelizeStyleName.js","fbjs/lib/hyphenateStyleName":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/hyphenateStyleName.js","fbjs/lib/memoizeStringOnly":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/memoizeStringOnly.js","fbjs/lib/warning":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/CallbackQueue.js":[function(require,module,exports){
+},{"./CSSProperty":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/CSSProperty.js","./ReactPerf":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactPerf.js","./dangerousStyleValue":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/dangerousStyleValue.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/ExecutionEnvironment":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/ExecutionEnvironment.js","fbjs/lib/camelizeStyleName":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/camelizeStyleName.js","fbjs/lib/hyphenateStyleName":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/hyphenateStyleName.js","fbjs/lib/memoizeStringOnly":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/memoizeStringOnly.js","fbjs/lib/warning":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/CallbackQueue.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -1712,7 +1712,7 @@ PooledClass.addPoolingTo(CallbackQueue);
 
 module.exports = CallbackQueue;
 }).call(this,require('_process'))
-},{"./Object.assign":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/PooledClass.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/invariant.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ChangeEventPlugin.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/PooledClass.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/invariant.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ChangeEventPlugin.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -2034,7 +2034,7 @@ var ChangeEventPlugin = {
 };
 
 module.exports = ChangeEventPlugin;
-},{"./EventConstants":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/EventConstants.js","./EventPluginHub":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/EventPluginHub.js","./EventPropagators":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/EventPropagators.js","./ReactUpdates":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactUpdates.js","./SyntheticEvent":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/SyntheticEvent.js","./getEventTarget":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/getEventTarget.js","./isEventSupported":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/isEventSupported.js","./isTextInputElement":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/isTextInputElement.js","fbjs/lib/ExecutionEnvironment":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/ExecutionEnvironment.js","fbjs/lib/keyOf":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/keyOf.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ClientReactRootIndex.js":[function(require,module,exports){
+},{"./EventConstants":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/EventConstants.js","./EventPluginHub":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/EventPluginHub.js","./EventPropagators":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/EventPropagators.js","./ReactUpdates":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactUpdates.js","./SyntheticEvent":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/SyntheticEvent.js","./getEventTarget":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/getEventTarget.js","./isEventSupported":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/isEventSupported.js","./isTextInputElement":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/isTextInputElement.js","fbjs/lib/ExecutionEnvironment":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/ExecutionEnvironment.js","fbjs/lib/keyOf":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/keyOf.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ClientReactRootIndex.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -2058,7 +2058,7 @@ var ClientReactRootIndex = {
 };
 
 module.exports = ClientReactRootIndex;
-},{}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/DOMChildrenOperations.js":[function(require,module,exports){
+},{}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/DOMChildrenOperations.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -2190,7 +2190,7 @@ ReactPerf.measureMethods(DOMChildrenOperations, 'DOMChildrenOperations', {
 
 module.exports = DOMChildrenOperations;
 }).call(this,require('_process'))
-},{"./Danger":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/Danger.js","./ReactMultiChildUpdateTypes":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactMultiChildUpdateTypes.js","./ReactPerf":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactPerf.js","./setInnerHTML":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/setInnerHTML.js","./setTextContent":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/setTextContent.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/invariant.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/DOMProperty.js":[function(require,module,exports){
+},{"./Danger":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/Danger.js","./ReactMultiChildUpdateTypes":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactMultiChildUpdateTypes.js","./ReactPerf":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactPerf.js","./setInnerHTML":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/setInnerHTML.js","./setTextContent":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/setTextContent.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/invariant.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/DOMProperty.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -2427,7 +2427,7 @@ var DOMProperty = {
 
 module.exports = DOMProperty;
 }).call(this,require('_process'))
-},{"_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/invariant.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/DOMPropertyOperations.js":[function(require,module,exports){
+},{"_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/invariant.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/DOMPropertyOperations.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -2655,7 +2655,7 @@ ReactPerf.measureMethods(DOMPropertyOperations, 'DOMPropertyOperations', {
 
 module.exports = DOMPropertyOperations;
 }).call(this,require('_process'))
-},{"./DOMProperty":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/DOMProperty.js","./ReactPerf":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactPerf.js","./quoteAttributeValueForBrowser":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/quoteAttributeValueForBrowser.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/Danger.js":[function(require,module,exports){
+},{"./DOMProperty":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/DOMProperty.js","./ReactPerf":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactPerf.js","./quoteAttributeValueForBrowser":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/quoteAttributeValueForBrowser.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/Danger.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -2803,7 +2803,7 @@ var Danger = {
 
 module.exports = Danger;
 }).call(this,require('_process'))
-},{"_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/ExecutionEnvironment":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/ExecutionEnvironment.js","fbjs/lib/createNodesFromMarkup":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/createNodesFromMarkup.js","fbjs/lib/emptyFunction":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/emptyFunction.js","fbjs/lib/getMarkupWrap":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/getMarkupWrap.js","fbjs/lib/invariant":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/invariant.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/DefaultEventPluginOrder.js":[function(require,module,exports){
+},{"_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/ExecutionEnvironment":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/ExecutionEnvironment.js","fbjs/lib/createNodesFromMarkup":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/createNodesFromMarkup.js","fbjs/lib/emptyFunction":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/emptyFunction.js","fbjs/lib/getMarkupWrap":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/getMarkupWrap.js","fbjs/lib/invariant":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/invariant.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/DefaultEventPluginOrder.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -2831,7 +2831,7 @@ var keyOf = require('fbjs/lib/keyOf');
 var DefaultEventPluginOrder = [keyOf({ ResponderEventPlugin: null }), keyOf({ SimpleEventPlugin: null }), keyOf({ TapEventPlugin: null }), keyOf({ EnterLeaveEventPlugin: null }), keyOf({ ChangeEventPlugin: null }), keyOf({ SelectEventPlugin: null }), keyOf({ BeforeInputEventPlugin: null })];
 
 module.exports = DefaultEventPluginOrder;
-},{"fbjs/lib/keyOf":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/keyOf.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/EnterLeaveEventPlugin.js":[function(require,module,exports){
+},{"fbjs/lib/keyOf":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/keyOf.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/EnterLeaveEventPlugin.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -2956,7 +2956,7 @@ var EnterLeaveEventPlugin = {
 };
 
 module.exports = EnterLeaveEventPlugin;
-},{"./EventConstants":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/EventConstants.js","./EventPropagators":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/EventPropagators.js","./ReactMount":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactMount.js","./SyntheticMouseEvent":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/SyntheticMouseEvent.js","fbjs/lib/keyOf":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/keyOf.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/EventConstants.js":[function(require,module,exports){
+},{"./EventConstants":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/EventConstants.js","./EventPropagators":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/EventPropagators.js","./ReactMount":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactMount.js","./SyntheticMouseEvent":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/SyntheticMouseEvent.js","fbjs/lib/keyOf":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/keyOf.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/EventConstants.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -3049,7 +3049,7 @@ var EventConstants = {
 };
 
 module.exports = EventConstants;
-},{"fbjs/lib/keyMirror":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/keyMirror.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/EventPluginHub.js":[function(require,module,exports){
+},{"fbjs/lib/keyMirror":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/keyMirror.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/EventPluginHub.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -3331,7 +3331,7 @@ var EventPluginHub = {
 
 module.exports = EventPluginHub;
 }).call(this,require('_process'))
-},{"./EventPluginRegistry":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/EventPluginRegistry.js","./EventPluginUtils":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/EventPluginUtils.js","./ReactErrorUtils":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactErrorUtils.js","./accumulateInto":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/accumulateInto.js","./forEachAccumulated":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/forEachAccumulated.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/EventPluginRegistry.js":[function(require,module,exports){
+},{"./EventPluginRegistry":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/EventPluginRegistry.js","./EventPluginUtils":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/EventPluginUtils.js","./ReactErrorUtils":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactErrorUtils.js","./accumulateInto":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/accumulateInto.js","./forEachAccumulated":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/forEachAccumulated.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/EventPluginRegistry.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -3554,7 +3554,7 @@ var EventPluginRegistry = {
 
 module.exports = EventPluginRegistry;
 }).call(this,require('_process'))
-},{"_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/invariant.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/EventPluginUtils.js":[function(require,module,exports){
+},{"_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/invariant.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/EventPluginUtils.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -3759,7 +3759,7 @@ var EventPluginUtils = {
 
 module.exports = EventPluginUtils;
 }).call(this,require('_process'))
-},{"./EventConstants":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/EventConstants.js","./ReactErrorUtils":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactErrorUtils.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/EventPropagators.js":[function(require,module,exports){
+},{"./EventConstants":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/EventConstants.js","./ReactErrorUtils":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactErrorUtils.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/EventPropagators.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -3897,7 +3897,7 @@ var EventPropagators = {
 
 module.exports = EventPropagators;
 }).call(this,require('_process'))
-},{"./EventConstants":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/EventConstants.js","./EventPluginHub":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/EventPluginHub.js","./accumulateInto":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/accumulateInto.js","./forEachAccumulated":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/forEachAccumulated.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/FallbackCompositionState.js":[function(require,module,exports){
+},{"./EventConstants":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/EventConstants.js","./EventPluginHub":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/EventPluginHub.js","./accumulateInto":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/accumulateInto.js","./forEachAccumulated":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/forEachAccumulated.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/FallbackCompositionState.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -3993,7 +3993,7 @@ assign(FallbackCompositionState.prototype, {
 PooledClass.addPoolingTo(FallbackCompositionState);
 
 module.exports = FallbackCompositionState;
-},{"./Object.assign":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/PooledClass.js","./getTextContentAccessor":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/getTextContentAccessor.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/HTMLDOMPropertyConfig.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/PooledClass.js","./getTextContentAccessor":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/getTextContentAccessor.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/HTMLDOMPropertyConfig.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -4223,7 +4223,7 @@ var HTMLDOMPropertyConfig = {
 };
 
 module.exports = HTMLDOMPropertyConfig;
-},{"./DOMProperty":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/DOMProperty.js","fbjs/lib/ExecutionEnvironment":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/ExecutionEnvironment.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/LinkedValueUtils.js":[function(require,module,exports){
+},{"./DOMProperty":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/DOMProperty.js","fbjs/lib/ExecutionEnvironment":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/ExecutionEnvironment.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/LinkedValueUtils.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -4360,7 +4360,7 @@ var LinkedValueUtils = {
 
 module.exports = LinkedValueUtils;
 }).call(this,require('_process'))
-},{"./ReactPropTypeLocations":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactPropTypeLocations.js","./ReactPropTypes":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactPropTypes.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/Object.assign.js":[function(require,module,exports){
+},{"./ReactPropTypeLocations":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactPropTypeLocations.js","./ReactPropTypes":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactPropTypes.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/Object.assign.js":[function(require,module,exports){
 /**
  * Copyright 2014-2015, Facebook, Inc.
  * All rights reserved.
@@ -4408,7 +4408,7 @@ function assign(target, sources) {
 }
 
 module.exports = assign;
-},{}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/PooledClass.js":[function(require,module,exports){
+},{}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/PooledClass.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -4530,7 +4530,7 @@ var PooledClass = {
 
 module.exports = PooledClass;
 }).call(this,require('_process'))
-},{"_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/invariant.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/React.js":[function(require,module,exports){
+},{"_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/invariant.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/React.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -4570,7 +4570,7 @@ assign(React, {
 React.__SECRET_DOM_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = ReactDOM;
 
 module.exports = React;
-},{"./Object.assign":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/Object.assign.js","./ReactDOM":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactDOM.js","./ReactDOMServer":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactDOMServer.js","./ReactIsomorphic":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactIsomorphic.js","./deprecated":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/deprecated.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactBrowserComponentMixin.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/Object.assign.js","./ReactDOM":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactDOM.js","./ReactDOMServer":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactDOMServer.js","./ReactIsomorphic":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactIsomorphic.js","./deprecated":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/deprecated.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactBrowserComponentMixin.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -4609,7 +4609,7 @@ var ReactBrowserComponentMixin = {
 
 module.exports = ReactBrowserComponentMixin;
 }).call(this,require('_process'))
-},{"./ReactInstanceMap":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactInstanceMap.js","./findDOMNode":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/findDOMNode.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactBrowserEventEmitter.js":[function(require,module,exports){
+},{"./ReactInstanceMap":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactInstanceMap.js","./findDOMNode":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/findDOMNode.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactBrowserEventEmitter.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -4934,7 +4934,7 @@ ReactPerf.measureMethods(ReactBrowserEventEmitter, 'ReactBrowserEventEmitter', {
 });
 
 module.exports = ReactBrowserEventEmitter;
-},{"./EventConstants":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/EventConstants.js","./EventPluginHub":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/EventPluginHub.js","./EventPluginRegistry":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/EventPluginRegistry.js","./Object.assign":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/Object.assign.js","./ReactEventEmitterMixin":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactEventEmitterMixin.js","./ReactPerf":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactPerf.js","./ViewportMetrics":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ViewportMetrics.js","./isEventSupported":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/isEventSupported.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactChildReconciler.js":[function(require,module,exports){
+},{"./EventConstants":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/EventConstants.js","./EventPluginHub":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/EventPluginHub.js","./EventPluginRegistry":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/EventPluginRegistry.js","./Object.assign":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/Object.assign.js","./ReactEventEmitterMixin":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactEventEmitterMixin.js","./ReactPerf":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactPerf.js","./ViewportMetrics":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ViewportMetrics.js","./isEventSupported":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/isEventSupported.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactChildReconciler.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -5059,7 +5059,7 @@ var ReactChildReconciler = {
 
 module.exports = ReactChildReconciler;
 }).call(this,require('_process'))
-},{"./ReactReconciler":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactReconciler.js","./instantiateReactComponent":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/instantiateReactComponent.js","./shouldUpdateReactComponent":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/shouldUpdateReactComponent.js","./traverseAllChildren":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/traverseAllChildren.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactChildren.js":[function(require,module,exports){
+},{"./ReactReconciler":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactReconciler.js","./instantiateReactComponent":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/instantiateReactComponent.js","./shouldUpdateReactComponent":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/shouldUpdateReactComponent.js","./traverseAllChildren":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/traverseAllChildren.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactChildren.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -5242,7 +5242,7 @@ var ReactChildren = {
 };
 
 module.exports = ReactChildren;
-},{"./PooledClass":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/PooledClass.js","./ReactElement":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactElement.js","./traverseAllChildren":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/traverseAllChildren.js","fbjs/lib/emptyFunction":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/emptyFunction.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactClass.js":[function(require,module,exports){
+},{"./PooledClass":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/PooledClass.js","./ReactElement":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactElement.js","./traverseAllChildren":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/traverseAllChildren.js","fbjs/lib/emptyFunction":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/emptyFunction.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactClass.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -6016,7 +6016,7 @@ var ReactClass = {
 
 module.exports = ReactClass;
 }).call(this,require('_process'))
-},{"./Object.assign":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/Object.assign.js","./ReactComponent":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactComponent.js","./ReactElement":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactElement.js","./ReactNoopUpdateQueue":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactNoopUpdateQueue.js","./ReactPropTypeLocationNames":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactPropTypeLocationNames.js","./ReactPropTypeLocations":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactPropTypeLocations.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/emptyObject":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/emptyObject.js","fbjs/lib/invariant":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/invariant.js","fbjs/lib/keyMirror":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/keyMirror.js","fbjs/lib/keyOf":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/keyOf.js","fbjs/lib/warning":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactComponent.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/Object.assign.js","./ReactComponent":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactComponent.js","./ReactElement":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactElement.js","./ReactNoopUpdateQueue":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactNoopUpdateQueue.js","./ReactPropTypeLocationNames":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactPropTypeLocationNames.js","./ReactPropTypeLocations":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactPropTypeLocations.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/emptyObject":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/emptyObject.js","fbjs/lib/invariant":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/invariant.js","fbjs/lib/keyMirror":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/keyMirror.js","fbjs/lib/keyOf":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/keyOf.js","fbjs/lib/warning":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactComponent.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -6141,7 +6141,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = ReactComponent;
 }).call(this,require('_process'))
-},{"./ReactNoopUpdateQueue":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactNoopUpdateQueue.js","./canDefineProperty":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/canDefineProperty.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/emptyObject":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/emptyObject.js","fbjs/lib/invariant":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactComponentBrowserEnvironment.js":[function(require,module,exports){
+},{"./ReactNoopUpdateQueue":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactNoopUpdateQueue.js","./canDefineProperty":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/canDefineProperty.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/emptyObject":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/emptyObject.js","fbjs/lib/invariant":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactComponentBrowserEnvironment.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -6183,7 +6183,7 @@ var ReactComponentBrowserEnvironment = {
 };
 
 module.exports = ReactComponentBrowserEnvironment;
-},{"./ReactDOMIDOperations":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactDOMIDOperations.js","./ReactMount":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactMount.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactComponentEnvironment.js":[function(require,module,exports){
+},{"./ReactDOMIDOperations":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactDOMIDOperations.js","./ReactMount":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactMount.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactComponentEnvironment.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -6237,7 +6237,7 @@ var ReactComponentEnvironment = {
 
 module.exports = ReactComponentEnvironment;
 }).call(this,require('_process'))
-},{"_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/invariant.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactCompositeComponent.js":[function(require,module,exports){
+},{"_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/invariant.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactCompositeComponent.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -6934,7 +6934,7 @@ var ReactCompositeComponent = {
 
 module.exports = ReactCompositeComponent;
 }).call(this,require('_process'))
-},{"./Object.assign":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/Object.assign.js","./ReactComponentEnvironment":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactComponentEnvironment.js","./ReactCurrentOwner":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactCurrentOwner.js","./ReactElement":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactElement.js","./ReactInstanceMap":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactInstanceMap.js","./ReactPerf":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactPerf.js","./ReactPropTypeLocationNames":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactPropTypeLocationNames.js","./ReactPropTypeLocations":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactPropTypeLocations.js","./ReactReconciler":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactReconciler.js","./ReactUpdateQueue":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactUpdateQueue.js","./shouldUpdateReactComponent":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/shouldUpdateReactComponent.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/emptyObject":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/emptyObject.js","fbjs/lib/invariant":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactCurrentOwner.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/Object.assign.js","./ReactComponentEnvironment":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactComponentEnvironment.js","./ReactCurrentOwner":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactCurrentOwner.js","./ReactElement":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactElement.js","./ReactInstanceMap":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactInstanceMap.js","./ReactPerf":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactPerf.js","./ReactPropTypeLocationNames":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactPropTypeLocationNames.js","./ReactPropTypeLocations":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactPropTypeLocations.js","./ReactReconciler":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactReconciler.js","./ReactUpdateQueue":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactUpdateQueue.js","./shouldUpdateReactComponent":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/shouldUpdateReactComponent.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/emptyObject":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/emptyObject.js","fbjs/lib/invariant":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactCurrentOwner.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -6965,7 +6965,7 @@ var ReactCurrentOwner = {
 };
 
 module.exports = ReactCurrentOwner;
-},{}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactDOM.js":[function(require,module,exports){
+},{}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactDOM.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -7060,7 +7060,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = React;
 }).call(this,require('_process'))
-},{"./ReactCurrentOwner":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactCurrentOwner.js","./ReactDOMTextComponent":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactDOMTextComponent.js","./ReactDefaultInjection":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactDefaultInjection.js","./ReactInstanceHandles":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactInstanceHandles.js","./ReactMount":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactMount.js","./ReactPerf":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactPerf.js","./ReactReconciler":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactReconciler.js","./ReactUpdates":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactUpdates.js","./ReactVersion":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactVersion.js","./findDOMNode":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/findDOMNode.js","./renderSubtreeIntoContainer":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/renderSubtreeIntoContainer.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/ExecutionEnvironment":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/ExecutionEnvironment.js","fbjs/lib/warning":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactDOMButton.js":[function(require,module,exports){
+},{"./ReactCurrentOwner":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactCurrentOwner.js","./ReactDOMTextComponent":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactDOMTextComponent.js","./ReactDefaultInjection":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactDefaultInjection.js","./ReactInstanceHandles":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactInstanceHandles.js","./ReactMount":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactMount.js","./ReactPerf":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactPerf.js","./ReactReconciler":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactReconciler.js","./ReactUpdates":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactUpdates.js","./ReactVersion":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactVersion.js","./findDOMNode":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/findDOMNode.js","./renderSubtreeIntoContainer":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/renderSubtreeIntoContainer.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/ExecutionEnvironment":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/ExecutionEnvironment.js","fbjs/lib/warning":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactDOMButton.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -7111,7 +7111,7 @@ var ReactDOMButton = {
 };
 
 module.exports = ReactDOMButton;
-},{}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactDOMComponent.js":[function(require,module,exports){
+},{}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactDOMComponent.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -8070,7 +8070,7 @@ assign(ReactDOMComponent.prototype, ReactDOMComponent.Mixin, ReactMultiChild.Mix
 
 module.exports = ReactDOMComponent;
 }).call(this,require('_process'))
-},{"./AutoFocusUtils":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/AutoFocusUtils.js","./CSSPropertyOperations":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/CSSPropertyOperations.js","./DOMProperty":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/DOMProperty.js","./DOMPropertyOperations":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/DOMPropertyOperations.js","./EventConstants":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/EventConstants.js","./Object.assign":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/Object.assign.js","./ReactBrowserEventEmitter":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactBrowserEventEmitter.js","./ReactComponentBrowserEnvironment":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactComponentBrowserEnvironment.js","./ReactDOMButton":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactDOMButton.js","./ReactDOMInput":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactDOMInput.js","./ReactDOMOption":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactDOMOption.js","./ReactDOMSelect":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactDOMSelect.js","./ReactDOMTextarea":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactDOMTextarea.js","./ReactMount":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactMount.js","./ReactMultiChild":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactMultiChild.js","./ReactPerf":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactPerf.js","./ReactUpdateQueue":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactUpdateQueue.js","./canDefineProperty":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/canDefineProperty.js","./escapeTextContentForBrowser":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/escapeTextContentForBrowser.js","./isEventSupported":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/isEventSupported.js","./setInnerHTML":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/setInnerHTML.js","./setTextContent":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/setTextContent.js","./validateDOMNesting":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/validateDOMNesting.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/invariant.js","fbjs/lib/keyOf":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/keyOf.js","fbjs/lib/shallowEqual":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/shallowEqual.js","fbjs/lib/warning":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactDOMFactories.js":[function(require,module,exports){
+},{"./AutoFocusUtils":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/AutoFocusUtils.js","./CSSPropertyOperations":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/CSSPropertyOperations.js","./DOMProperty":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/DOMProperty.js","./DOMPropertyOperations":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/DOMPropertyOperations.js","./EventConstants":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/EventConstants.js","./Object.assign":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/Object.assign.js","./ReactBrowserEventEmitter":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactBrowserEventEmitter.js","./ReactComponentBrowserEnvironment":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactComponentBrowserEnvironment.js","./ReactDOMButton":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactDOMButton.js","./ReactDOMInput":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactDOMInput.js","./ReactDOMOption":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactDOMOption.js","./ReactDOMSelect":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactDOMSelect.js","./ReactDOMTextarea":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactDOMTextarea.js","./ReactMount":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactMount.js","./ReactMultiChild":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactMultiChild.js","./ReactPerf":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactPerf.js","./ReactUpdateQueue":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactUpdateQueue.js","./canDefineProperty":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/canDefineProperty.js","./escapeTextContentForBrowser":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/escapeTextContentForBrowser.js","./isEventSupported":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/isEventSupported.js","./setInnerHTML":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/setInnerHTML.js","./setTextContent":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/setTextContent.js","./validateDOMNesting":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/validateDOMNesting.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/invariant.js","fbjs/lib/keyOf":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/keyOf.js","fbjs/lib/shallowEqual":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/shallowEqual.js","fbjs/lib/warning":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactDOMFactories.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -8250,7 +8250,7 @@ var ReactDOMFactories = mapObject({
 
 module.exports = ReactDOMFactories;
 }).call(this,require('_process'))
-},{"./ReactElement":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactElement.js","./ReactElementValidator":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactElementValidator.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/mapObject":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/mapObject.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactDOMFeatureFlags.js":[function(require,module,exports){
+},{"./ReactElement":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactElement.js","./ReactElementValidator":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactElementValidator.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/mapObject":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/mapObject.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactDOMFeatureFlags.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -8269,7 +8269,7 @@ var ReactDOMFeatureFlags = {
 };
 
 module.exports = ReactDOMFeatureFlags;
-},{}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactDOMIDOperations.js":[function(require,module,exports){
+},{}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactDOMIDOperations.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -8366,7 +8366,7 @@ ReactPerf.measureMethods(ReactDOMIDOperations, 'ReactDOMIDOperations', {
 
 module.exports = ReactDOMIDOperations;
 }).call(this,require('_process'))
-},{"./DOMChildrenOperations":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/DOMChildrenOperations.js","./DOMPropertyOperations":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/DOMPropertyOperations.js","./ReactMount":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactMount.js","./ReactPerf":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactPerf.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/invariant.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactDOMInput.js":[function(require,module,exports){
+},{"./DOMChildrenOperations":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/DOMChildrenOperations.js","./DOMPropertyOperations":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/DOMPropertyOperations.js","./ReactMount":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactMount.js","./ReactPerf":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactPerf.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/invariant.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactDOMInput.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -8522,7 +8522,7 @@ function _handleChange(event) {
 
 module.exports = ReactDOMInput;
 }).call(this,require('_process'))
-},{"./LinkedValueUtils":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/LinkedValueUtils.js","./Object.assign":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/Object.assign.js","./ReactDOMIDOperations":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactDOMIDOperations.js","./ReactMount":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactMount.js","./ReactUpdates":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactUpdates.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/invariant.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactDOMOption.js":[function(require,module,exports){
+},{"./LinkedValueUtils":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/LinkedValueUtils.js","./Object.assign":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/Object.assign.js","./ReactDOMIDOperations":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactDOMIDOperations.js","./ReactMount":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactMount.js","./ReactUpdates":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactUpdates.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/invariant.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactDOMOption.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -8611,7 +8611,7 @@ var ReactDOMOption = {
 
 module.exports = ReactDOMOption;
 }).call(this,require('_process'))
-},{"./Object.assign":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/Object.assign.js","./ReactChildren":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactChildren.js","./ReactDOMSelect":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactDOMSelect.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactDOMSelect.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/Object.assign.js","./ReactChildren":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactChildren.js","./ReactDOMSelect":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactDOMSelect.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactDOMSelect.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -8802,7 +8802,7 @@ function _handleChange(event) {
 
 module.exports = ReactDOMSelect;
 }).call(this,require('_process'))
-},{"./LinkedValueUtils":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/LinkedValueUtils.js","./Object.assign":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/Object.assign.js","./ReactMount":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactMount.js","./ReactUpdates":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactUpdates.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactDOMSelection.js":[function(require,module,exports){
+},{"./LinkedValueUtils":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/LinkedValueUtils.js","./Object.assign":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/Object.assign.js","./ReactMount":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactMount.js","./ReactUpdates":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactUpdates.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactDOMSelection.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -9015,7 +9015,7 @@ var ReactDOMSelection = {
 };
 
 module.exports = ReactDOMSelection;
-},{"./getNodeForCharacterOffset":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/getNodeForCharacterOffset.js","./getTextContentAccessor":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/getTextContentAccessor.js","fbjs/lib/ExecutionEnvironment":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/ExecutionEnvironment.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactDOMServer.js":[function(require,module,exports){
+},{"./getNodeForCharacterOffset":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/getNodeForCharacterOffset.js","./getTextContentAccessor":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/getTextContentAccessor.js","fbjs/lib/ExecutionEnvironment":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/ExecutionEnvironment.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactDOMServer.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -9042,7 +9042,7 @@ var ReactDOMServer = {
 };
 
 module.exports = ReactDOMServer;
-},{"./ReactDefaultInjection":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactDefaultInjection.js","./ReactServerRendering":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactServerRendering.js","./ReactVersion":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactVersion.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactDOMTextComponent.js":[function(require,module,exports){
+},{"./ReactDefaultInjection":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactDefaultInjection.js","./ReactServerRendering":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactServerRendering.js","./ReactVersion":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactVersion.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactDOMTextComponent.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -9172,7 +9172,7 @@ assign(ReactDOMTextComponent.prototype, {
 
 module.exports = ReactDOMTextComponent;
 }).call(this,require('_process'))
-},{"./DOMChildrenOperations":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/DOMChildrenOperations.js","./DOMPropertyOperations":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/DOMPropertyOperations.js","./Object.assign":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/Object.assign.js","./ReactComponentBrowserEnvironment":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactComponentBrowserEnvironment.js","./ReactMount":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactMount.js","./escapeTextContentForBrowser":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/escapeTextContentForBrowser.js","./setTextContent":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/setTextContent.js","./validateDOMNesting":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/validateDOMNesting.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactDOMTextarea.js":[function(require,module,exports){
+},{"./DOMChildrenOperations":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/DOMChildrenOperations.js","./DOMPropertyOperations":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/DOMPropertyOperations.js","./Object.assign":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/Object.assign.js","./ReactComponentBrowserEnvironment":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactComponentBrowserEnvironment.js","./ReactMount":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactMount.js","./escapeTextContentForBrowser":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/escapeTextContentForBrowser.js","./setTextContent":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/setTextContent.js","./validateDOMNesting":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/validateDOMNesting.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactDOMTextarea.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -9288,7 +9288,7 @@ function _handleChange(event) {
 
 module.exports = ReactDOMTextarea;
 }).call(this,require('_process'))
-},{"./LinkedValueUtils":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/LinkedValueUtils.js","./Object.assign":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/Object.assign.js","./ReactDOMIDOperations":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactDOMIDOperations.js","./ReactUpdates":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactUpdates.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactDefaultBatchingStrategy.js":[function(require,module,exports){
+},{"./LinkedValueUtils":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/LinkedValueUtils.js","./Object.assign":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/Object.assign.js","./ReactDOMIDOperations":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactDOMIDOperations.js","./ReactUpdates":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactUpdates.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactDefaultBatchingStrategy.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -9356,7 +9356,7 @@ var ReactDefaultBatchingStrategy = {
 };
 
 module.exports = ReactDefaultBatchingStrategy;
-},{"./Object.assign":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/Object.assign.js","./ReactUpdates":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactUpdates.js","./Transaction":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/Transaction.js","fbjs/lib/emptyFunction":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/emptyFunction.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactDefaultInjection.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/Object.assign.js","./ReactUpdates":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactUpdates.js","./Transaction":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/Transaction.js","fbjs/lib/emptyFunction":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/emptyFunction.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactDefaultInjection.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -9456,7 +9456,7 @@ module.exports = {
   inject: inject
 };
 }).call(this,require('_process'))
-},{"./BeforeInputEventPlugin":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/BeforeInputEventPlugin.js","./ChangeEventPlugin":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ChangeEventPlugin.js","./ClientReactRootIndex":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ClientReactRootIndex.js","./DefaultEventPluginOrder":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/DefaultEventPluginOrder.js","./EnterLeaveEventPlugin":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/EnterLeaveEventPlugin.js","./HTMLDOMPropertyConfig":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/HTMLDOMPropertyConfig.js","./ReactBrowserComponentMixin":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactBrowserComponentMixin.js","./ReactComponentBrowserEnvironment":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactComponentBrowserEnvironment.js","./ReactDOMComponent":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactDOMComponent.js","./ReactDOMTextComponent":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactDOMTextComponent.js","./ReactDefaultBatchingStrategy":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactDefaultBatchingStrategy.js","./ReactDefaultPerf":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactDefaultPerf.js","./ReactEventListener":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactEventListener.js","./ReactInjection":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactInjection.js","./ReactInstanceHandles":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactInstanceHandles.js","./ReactMount":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactMount.js","./ReactReconcileTransaction":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactReconcileTransaction.js","./SVGDOMPropertyConfig":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/SVGDOMPropertyConfig.js","./SelectEventPlugin":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/SelectEventPlugin.js","./ServerReactRootIndex":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ServerReactRootIndex.js","./SimpleEventPlugin":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/SimpleEventPlugin.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/ExecutionEnvironment":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/ExecutionEnvironment.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactDefaultPerf.js":[function(require,module,exports){
+},{"./BeforeInputEventPlugin":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/BeforeInputEventPlugin.js","./ChangeEventPlugin":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ChangeEventPlugin.js","./ClientReactRootIndex":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ClientReactRootIndex.js","./DefaultEventPluginOrder":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/DefaultEventPluginOrder.js","./EnterLeaveEventPlugin":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/EnterLeaveEventPlugin.js","./HTMLDOMPropertyConfig":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/HTMLDOMPropertyConfig.js","./ReactBrowserComponentMixin":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactBrowserComponentMixin.js","./ReactComponentBrowserEnvironment":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactComponentBrowserEnvironment.js","./ReactDOMComponent":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactDOMComponent.js","./ReactDOMTextComponent":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactDOMTextComponent.js","./ReactDefaultBatchingStrategy":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactDefaultBatchingStrategy.js","./ReactDefaultPerf":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactDefaultPerf.js","./ReactEventListener":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactEventListener.js","./ReactInjection":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactInjection.js","./ReactInstanceHandles":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactInstanceHandles.js","./ReactMount":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactMount.js","./ReactReconcileTransaction":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactReconcileTransaction.js","./SVGDOMPropertyConfig":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/SVGDOMPropertyConfig.js","./SelectEventPlugin":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/SelectEventPlugin.js","./ServerReactRootIndex":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ServerReactRootIndex.js","./SimpleEventPlugin":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/SimpleEventPlugin.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/ExecutionEnvironment":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/ExecutionEnvironment.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactDefaultPerf.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -9694,7 +9694,7 @@ var ReactDefaultPerf = {
 };
 
 module.exports = ReactDefaultPerf;
-},{"./DOMProperty":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/DOMProperty.js","./ReactDefaultPerfAnalysis":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactDefaultPerfAnalysis.js","./ReactMount":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactMount.js","./ReactPerf":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactPerf.js","fbjs/lib/performanceNow":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/performanceNow.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactDefaultPerfAnalysis.js":[function(require,module,exports){
+},{"./DOMProperty":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/DOMProperty.js","./ReactDefaultPerfAnalysis":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactDefaultPerfAnalysis.js","./ReactMount":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactMount.js","./ReactPerf":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactPerf.js","fbjs/lib/performanceNow":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/performanceNow.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactDefaultPerfAnalysis.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -9894,7 +9894,7 @@ var ReactDefaultPerfAnalysis = {
 };
 
 module.exports = ReactDefaultPerfAnalysis;
-},{"./Object.assign":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/Object.assign.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactElement.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/Object.assign.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactElement.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -10144,7 +10144,7 @@ ReactElement.isValidElement = function (object) {
 
 module.exports = ReactElement;
 }).call(this,require('_process'))
-},{"./Object.assign":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/Object.assign.js","./ReactCurrentOwner":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactCurrentOwner.js","./canDefineProperty":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/canDefineProperty.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactElementValidator.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/Object.assign.js","./ReactCurrentOwner":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactCurrentOwner.js","./canDefineProperty":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/canDefineProperty.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactElementValidator.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -10428,7 +10428,7 @@ var ReactElementValidator = {
 
 module.exports = ReactElementValidator;
 }).call(this,require('_process'))
-},{"./ReactCurrentOwner":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactCurrentOwner.js","./ReactElement":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactElement.js","./ReactPropTypeLocationNames":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactPropTypeLocationNames.js","./ReactPropTypeLocations":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactPropTypeLocations.js","./canDefineProperty":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/canDefineProperty.js","./getIteratorFn":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/getIteratorFn.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactEmptyComponent.js":[function(require,module,exports){
+},{"./ReactCurrentOwner":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactCurrentOwner.js","./ReactElement":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactElement.js","./ReactPropTypeLocationNames":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactPropTypeLocationNames.js","./ReactPropTypeLocations":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactPropTypeLocations.js","./canDefineProperty":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/canDefineProperty.js","./getIteratorFn":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/getIteratorFn.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactEmptyComponent.js":[function(require,module,exports){
 /**
  * Copyright 2014-2015, Facebook, Inc.
  * All rights reserved.
@@ -10480,7 +10480,7 @@ assign(ReactEmptyComponent.prototype, {
 ReactEmptyComponent.injection = ReactEmptyComponentInjection;
 
 module.exports = ReactEmptyComponent;
-},{"./Object.assign":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/Object.assign.js","./ReactElement":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactElement.js","./ReactEmptyComponentRegistry":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactEmptyComponentRegistry.js","./ReactReconciler":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactReconciler.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactEmptyComponentRegistry.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/Object.assign.js","./ReactElement":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactElement.js","./ReactEmptyComponentRegistry":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactEmptyComponentRegistry.js","./ReactReconciler":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactReconciler.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactEmptyComponentRegistry.js":[function(require,module,exports){
 /**
  * Copyright 2014-2015, Facebook, Inc.
  * All rights reserved.
@@ -10529,7 +10529,7 @@ var ReactEmptyComponentRegistry = {
 };
 
 module.exports = ReactEmptyComponentRegistry;
-},{}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactErrorUtils.js":[function(require,module,exports){
+},{}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactErrorUtils.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -10608,7 +10608,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = ReactErrorUtils;
 }).call(this,require('_process'))
-},{"_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactEventEmitterMixin.js":[function(require,module,exports){
+},{"_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactEventEmitterMixin.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -10647,7 +10647,7 @@ var ReactEventEmitterMixin = {
 };
 
 module.exports = ReactEventEmitterMixin;
-},{"./EventPluginHub":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/EventPluginHub.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactEventListener.js":[function(require,module,exports){
+},{"./EventPluginHub":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/EventPluginHub.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactEventListener.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -10859,7 +10859,7 @@ var ReactEventListener = {
 };
 
 module.exports = ReactEventListener;
-},{"./Object.assign":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/PooledClass.js","./ReactInstanceHandles":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactInstanceHandles.js","./ReactMount":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactMount.js","./ReactUpdates":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactUpdates.js","./getEventTarget":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/getEventTarget.js","fbjs/lib/EventListener":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/EventListener.js","fbjs/lib/ExecutionEnvironment":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/ExecutionEnvironment.js","fbjs/lib/getUnboundedScrollPosition":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/getUnboundedScrollPosition.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactInjection.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/PooledClass.js","./ReactInstanceHandles":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactInstanceHandles.js","./ReactMount":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactMount.js","./ReactUpdates":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactUpdates.js","./getEventTarget":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/getEventTarget.js","fbjs/lib/EventListener":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/EventListener.js","fbjs/lib/ExecutionEnvironment":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/ExecutionEnvironment.js","fbjs/lib/getUnboundedScrollPosition":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/getUnboundedScrollPosition.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactInjection.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -10898,7 +10898,7 @@ var ReactInjection = {
 };
 
 module.exports = ReactInjection;
-},{"./DOMProperty":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/DOMProperty.js","./EventPluginHub":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/EventPluginHub.js","./ReactBrowserEventEmitter":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactBrowserEventEmitter.js","./ReactClass":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactClass.js","./ReactComponentEnvironment":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactComponentEnvironment.js","./ReactEmptyComponent":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactEmptyComponent.js","./ReactNativeComponent":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactNativeComponent.js","./ReactPerf":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactPerf.js","./ReactRootIndex":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactRootIndex.js","./ReactUpdates":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactUpdates.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactInputSelection.js":[function(require,module,exports){
+},{"./DOMProperty":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/DOMProperty.js","./EventPluginHub":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/EventPluginHub.js","./ReactBrowserEventEmitter":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactBrowserEventEmitter.js","./ReactClass":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactClass.js","./ReactComponentEnvironment":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactComponentEnvironment.js","./ReactEmptyComponent":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactEmptyComponent.js","./ReactNativeComponent":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactNativeComponent.js","./ReactPerf":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactPerf.js","./ReactRootIndex":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactRootIndex.js","./ReactUpdates":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactUpdates.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactInputSelection.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -11023,7 +11023,7 @@ var ReactInputSelection = {
 };
 
 module.exports = ReactInputSelection;
-},{"./ReactDOMSelection":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactDOMSelection.js","fbjs/lib/containsNode":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/containsNode.js","fbjs/lib/focusNode":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/focusNode.js","fbjs/lib/getActiveElement":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/getActiveElement.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactInstanceHandles.js":[function(require,module,exports){
+},{"./ReactDOMSelection":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactDOMSelection.js","fbjs/lib/containsNode":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/containsNode.js","fbjs/lib/focusNode":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/focusNode.js","fbjs/lib/getActiveElement":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/getActiveElement.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactInstanceHandles.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -11328,7 +11328,7 @@ var ReactInstanceHandles = {
 
 module.exports = ReactInstanceHandles;
 }).call(this,require('_process'))
-},{"./ReactRootIndex":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactRootIndex.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/invariant.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactInstanceMap.js":[function(require,module,exports){
+},{"./ReactRootIndex":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactRootIndex.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/invariant.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactInstanceMap.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -11376,7 +11376,7 @@ var ReactInstanceMap = {
 };
 
 module.exports = ReactInstanceMap;
-},{}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactIsomorphic.js":[function(require,module,exports){
+},{}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactIsomorphic.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -11453,7 +11453,7 @@ var React = {
 
 module.exports = React;
 }).call(this,require('_process'))
-},{"./Object.assign":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/Object.assign.js","./ReactChildren":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactChildren.js","./ReactClass":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactClass.js","./ReactComponent":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactComponent.js","./ReactDOMFactories":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactDOMFactories.js","./ReactElement":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactElement.js","./ReactElementValidator":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactElementValidator.js","./ReactPropTypes":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactPropTypes.js","./ReactVersion":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactVersion.js","./onlyChild":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/onlyChild.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactMarkupChecksum.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/Object.assign.js","./ReactChildren":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactChildren.js","./ReactClass":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactClass.js","./ReactComponent":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactComponent.js","./ReactDOMFactories":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactDOMFactories.js","./ReactElement":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactElement.js","./ReactElementValidator":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactElementValidator.js","./ReactPropTypes":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactPropTypes.js","./ReactVersion":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactVersion.js","./onlyChild":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/onlyChild.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactMarkupChecksum.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -11499,7 +11499,7 @@ var ReactMarkupChecksum = {
 };
 
 module.exports = ReactMarkupChecksum;
-},{"./adler32":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/adler32.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactMount.js":[function(require,module,exports){
+},{"./adler32":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/adler32.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactMount.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -12352,7 +12352,7 @@ ReactPerf.measureMethods(ReactMount, 'ReactMount', {
 
 module.exports = ReactMount;
 }).call(this,require('_process'))
-},{"./DOMProperty":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/DOMProperty.js","./Object.assign":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/Object.assign.js","./ReactBrowserEventEmitter":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactBrowserEventEmitter.js","./ReactCurrentOwner":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactCurrentOwner.js","./ReactDOMFeatureFlags":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactDOMFeatureFlags.js","./ReactElement":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactElement.js","./ReactEmptyComponentRegistry":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactEmptyComponentRegistry.js","./ReactInstanceHandles":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactInstanceHandles.js","./ReactInstanceMap":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactInstanceMap.js","./ReactMarkupChecksum":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactMarkupChecksum.js","./ReactPerf":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactPerf.js","./ReactReconciler":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactReconciler.js","./ReactUpdateQueue":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactUpdateQueue.js","./ReactUpdates":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactUpdates.js","./instantiateReactComponent":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/instantiateReactComponent.js","./setInnerHTML":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/setInnerHTML.js","./shouldUpdateReactComponent":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/shouldUpdateReactComponent.js","./validateDOMNesting":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/validateDOMNesting.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/containsNode":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/containsNode.js","fbjs/lib/emptyObject":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/emptyObject.js","fbjs/lib/invariant":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactMultiChild.js":[function(require,module,exports){
+},{"./DOMProperty":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/DOMProperty.js","./Object.assign":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/Object.assign.js","./ReactBrowserEventEmitter":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactBrowserEventEmitter.js","./ReactCurrentOwner":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactCurrentOwner.js","./ReactDOMFeatureFlags":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactDOMFeatureFlags.js","./ReactElement":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactElement.js","./ReactEmptyComponentRegistry":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactEmptyComponentRegistry.js","./ReactInstanceHandles":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactInstanceHandles.js","./ReactInstanceMap":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactInstanceMap.js","./ReactMarkupChecksum":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactMarkupChecksum.js","./ReactPerf":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactPerf.js","./ReactReconciler":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactReconciler.js","./ReactUpdateQueue":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactUpdateQueue.js","./ReactUpdates":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactUpdates.js","./instantiateReactComponent":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/instantiateReactComponent.js","./setInnerHTML":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/setInnerHTML.js","./shouldUpdateReactComponent":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/shouldUpdateReactComponent.js","./validateDOMNesting":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/validateDOMNesting.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/containsNode":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/containsNode.js","fbjs/lib/emptyObject":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/emptyObject.js","fbjs/lib/invariant":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactMultiChild.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -12851,7 +12851,7 @@ var ReactMultiChild = {
 
 module.exports = ReactMultiChild;
 }).call(this,require('_process'))
-},{"./ReactChildReconciler":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactChildReconciler.js","./ReactComponentEnvironment":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactComponentEnvironment.js","./ReactCurrentOwner":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactCurrentOwner.js","./ReactMultiChildUpdateTypes":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactMultiChildUpdateTypes.js","./ReactReconciler":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactReconciler.js","./flattenChildren":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/flattenChildren.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactMultiChildUpdateTypes.js":[function(require,module,exports){
+},{"./ReactChildReconciler":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactChildReconciler.js","./ReactComponentEnvironment":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactComponentEnvironment.js","./ReactCurrentOwner":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactCurrentOwner.js","./ReactMultiChildUpdateTypes":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactMultiChildUpdateTypes.js","./ReactReconciler":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactReconciler.js","./flattenChildren":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/flattenChildren.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactMultiChildUpdateTypes.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -12884,7 +12884,7 @@ var ReactMultiChildUpdateTypes = keyMirror({
 });
 
 module.exports = ReactMultiChildUpdateTypes;
-},{"fbjs/lib/keyMirror":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/keyMirror.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactNativeComponent.js":[function(require,module,exports){
+},{"fbjs/lib/keyMirror":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/keyMirror.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactNativeComponent.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -12981,7 +12981,7 @@ var ReactNativeComponent = {
 
 module.exports = ReactNativeComponent;
 }).call(this,require('_process'))
-},{"./Object.assign":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/Object.assign.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/invariant.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactNoopUpdateQueue.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/Object.assign.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/invariant.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactNoopUpdateQueue.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2015, Facebook, Inc.
@@ -13102,7 +13102,7 @@ var ReactNoopUpdateQueue = {
 
 module.exports = ReactNoopUpdateQueue;
 }).call(this,require('_process'))
-},{"_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactOwner.js":[function(require,module,exports){
+},{"_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactOwner.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -13196,7 +13196,7 @@ var ReactOwner = {
 
 module.exports = ReactOwner;
 }).call(this,require('_process'))
-},{"_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/invariant.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactPerf.js":[function(require,module,exports){
+},{"_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/invariant.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactPerf.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -13295,7 +13295,7 @@ function _noMeasure(objName, fnName, func) {
 
 module.exports = ReactPerf;
 }).call(this,require('_process'))
-},{"_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactPropTypeLocationNames.js":[function(require,module,exports){
+},{"_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactPropTypeLocationNames.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -13322,7 +13322,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = ReactPropTypeLocationNames;
 }).call(this,require('_process'))
-},{"_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactPropTypeLocations.js":[function(require,module,exports){
+},{"_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactPropTypeLocations.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -13345,7 +13345,7 @@ var ReactPropTypeLocations = keyMirror({
 });
 
 module.exports = ReactPropTypeLocations;
-},{"fbjs/lib/keyMirror":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/keyMirror.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactPropTypes.js":[function(require,module,exports){
+},{"fbjs/lib/keyMirror":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/keyMirror.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactPropTypes.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -13702,7 +13702,7 @@ function getClassName(propValue) {
 }
 
 module.exports = ReactPropTypes;
-},{"./ReactElement":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactElement.js","./ReactPropTypeLocationNames":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactPropTypeLocationNames.js","./getIteratorFn":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/getIteratorFn.js","fbjs/lib/emptyFunction":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/emptyFunction.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactReconcileTransaction.js":[function(require,module,exports){
+},{"./ReactElement":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactElement.js","./ReactPropTypeLocationNames":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactPropTypeLocationNames.js","./getIteratorFn":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/getIteratorFn.js","fbjs/lib/emptyFunction":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/emptyFunction.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactReconcileTransaction.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -13854,7 +13854,7 @@ assign(ReactReconcileTransaction.prototype, Transaction.Mixin, Mixin);
 PooledClass.addPoolingTo(ReactReconcileTransaction);
 
 module.exports = ReactReconcileTransaction;
-},{"./CallbackQueue":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/CallbackQueue.js","./Object.assign":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/PooledClass.js","./ReactBrowserEventEmitter":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactBrowserEventEmitter.js","./ReactDOMFeatureFlags":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactDOMFeatureFlags.js","./ReactInputSelection":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactInputSelection.js","./Transaction":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/Transaction.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactReconciler.js":[function(require,module,exports){
+},{"./CallbackQueue":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/CallbackQueue.js","./Object.assign":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/PooledClass.js","./ReactBrowserEventEmitter":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactBrowserEventEmitter.js","./ReactDOMFeatureFlags":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactDOMFeatureFlags.js","./ReactInputSelection":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactInputSelection.js","./Transaction":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/Transaction.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactReconciler.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -13962,7 +13962,7 @@ var ReactReconciler = {
 };
 
 module.exports = ReactReconciler;
-},{"./ReactRef":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactRef.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactRef.js":[function(require,module,exports){
+},{"./ReactRef":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactRef.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactRef.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -14041,7 +14041,7 @@ ReactRef.detachRefs = function (instance, element) {
 };
 
 module.exports = ReactRef;
-},{"./ReactOwner":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactOwner.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactRootIndex.js":[function(require,module,exports){
+},{"./ReactOwner":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactOwner.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactRootIndex.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -14071,7 +14071,7 @@ var ReactRootIndex = {
 };
 
 module.exports = ReactRootIndex;
-},{}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactServerBatchingStrategy.js":[function(require,module,exports){
+},{}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactServerBatchingStrategy.js":[function(require,module,exports){
 /**
  * Copyright 2014-2015, Facebook, Inc.
  * All rights reserved.
@@ -14095,7 +14095,7 @@ var ReactServerBatchingStrategy = {
 };
 
 module.exports = ReactServerBatchingStrategy;
-},{}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactServerRendering.js":[function(require,module,exports){
+},{}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactServerRendering.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -14181,7 +14181,7 @@ module.exports = {
   renderToStaticMarkup: renderToStaticMarkup
 };
 }).call(this,require('_process'))
-},{"./ReactDefaultBatchingStrategy":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactDefaultBatchingStrategy.js","./ReactElement":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactElement.js","./ReactInstanceHandles":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactInstanceHandles.js","./ReactMarkupChecksum":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactMarkupChecksum.js","./ReactServerBatchingStrategy":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactServerBatchingStrategy.js","./ReactServerRenderingTransaction":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactServerRenderingTransaction.js","./ReactUpdates":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactUpdates.js","./instantiateReactComponent":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/instantiateReactComponent.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/emptyObject":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/emptyObject.js","fbjs/lib/invariant":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/invariant.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactServerRenderingTransaction.js":[function(require,module,exports){
+},{"./ReactDefaultBatchingStrategy":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactDefaultBatchingStrategy.js","./ReactElement":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactElement.js","./ReactInstanceHandles":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactInstanceHandles.js","./ReactMarkupChecksum":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactMarkupChecksum.js","./ReactServerBatchingStrategy":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactServerBatchingStrategy.js","./ReactServerRenderingTransaction":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactServerRenderingTransaction.js","./ReactUpdates":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactUpdates.js","./instantiateReactComponent":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/instantiateReactComponent.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/emptyObject":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/emptyObject.js","fbjs/lib/invariant":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/invariant.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactServerRenderingTransaction.js":[function(require,module,exports){
 /**
  * Copyright 2014-2015, Facebook, Inc.
  * All rights reserved.
@@ -14269,7 +14269,7 @@ assign(ReactServerRenderingTransaction.prototype, Transaction.Mixin, Mixin);
 PooledClass.addPoolingTo(ReactServerRenderingTransaction);
 
 module.exports = ReactServerRenderingTransaction;
-},{"./CallbackQueue":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/CallbackQueue.js","./Object.assign":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/PooledClass.js","./Transaction":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/Transaction.js","fbjs/lib/emptyFunction":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/emptyFunction.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactUpdateQueue.js":[function(require,module,exports){
+},{"./CallbackQueue":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/CallbackQueue.js","./Object.assign":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/PooledClass.js","./Transaction":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/Transaction.js","fbjs/lib/emptyFunction":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/emptyFunction.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactUpdateQueue.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2015, Facebook, Inc.
@@ -14529,7 +14529,7 @@ var ReactUpdateQueue = {
 
 module.exports = ReactUpdateQueue;
 }).call(this,require('_process'))
-},{"./Object.assign":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/Object.assign.js","./ReactCurrentOwner":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactCurrentOwner.js","./ReactElement":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactElement.js","./ReactInstanceMap":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactInstanceMap.js","./ReactUpdates":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactUpdates.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactUpdates.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/Object.assign.js","./ReactCurrentOwner":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactCurrentOwner.js","./ReactElement":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactElement.js","./ReactInstanceMap":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactInstanceMap.js","./ReactUpdates":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactUpdates.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactUpdates.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -14755,7 +14755,7 @@ var ReactUpdates = {
 
 module.exports = ReactUpdates;
 }).call(this,require('_process'))
-},{"./CallbackQueue":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/CallbackQueue.js","./Object.assign":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/PooledClass.js","./ReactPerf":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactPerf.js","./ReactReconciler":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactReconciler.js","./Transaction":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/Transaction.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/invariant.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactVersion.js":[function(require,module,exports){
+},{"./CallbackQueue":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/CallbackQueue.js","./Object.assign":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/PooledClass.js","./ReactPerf":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactPerf.js","./ReactReconciler":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactReconciler.js","./Transaction":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/Transaction.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/invariant.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactVersion.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -14770,7 +14770,7 @@ module.exports = ReactUpdates;
 'use strict';
 
 module.exports = '0.14.1';
-},{}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/SVGDOMPropertyConfig.js":[function(require,module,exports){
+},{}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/SVGDOMPropertyConfig.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -14898,7 +14898,7 @@ var SVGDOMPropertyConfig = {
 };
 
 module.exports = SVGDOMPropertyConfig;
-},{"./DOMProperty":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/DOMProperty.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/SelectEventPlugin.js":[function(require,module,exports){
+},{"./DOMProperty":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/DOMProperty.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/SelectEventPlugin.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -15100,7 +15100,7 @@ var SelectEventPlugin = {
 };
 
 module.exports = SelectEventPlugin;
-},{"./EventConstants":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/EventConstants.js","./EventPropagators":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/EventPropagators.js","./ReactInputSelection":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactInputSelection.js","./SyntheticEvent":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/SyntheticEvent.js","./isTextInputElement":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/isTextInputElement.js","fbjs/lib/ExecutionEnvironment":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/ExecutionEnvironment.js","fbjs/lib/getActiveElement":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/getActiveElement.js","fbjs/lib/keyOf":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/keyOf.js","fbjs/lib/shallowEqual":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/shallowEqual.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ServerReactRootIndex.js":[function(require,module,exports){
+},{"./EventConstants":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/EventConstants.js","./EventPropagators":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/EventPropagators.js","./ReactInputSelection":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactInputSelection.js","./SyntheticEvent":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/SyntheticEvent.js","./isTextInputElement":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/isTextInputElement.js","fbjs/lib/ExecutionEnvironment":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/ExecutionEnvironment.js","fbjs/lib/getActiveElement":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/getActiveElement.js","fbjs/lib/keyOf":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/keyOf.js","fbjs/lib/shallowEqual":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/shallowEqual.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ServerReactRootIndex.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -15130,7 +15130,7 @@ var ServerReactRootIndex = {
 };
 
 module.exports = ServerReactRootIndex;
-},{}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/SimpleEventPlugin.js":[function(require,module,exports){
+},{}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/SimpleEventPlugin.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -15720,7 +15720,7 @@ var SimpleEventPlugin = {
 
 module.exports = SimpleEventPlugin;
 }).call(this,require('_process'))
-},{"./EventConstants":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/EventConstants.js","./EventPropagators":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/EventPropagators.js","./ReactMount":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactMount.js","./SyntheticClipboardEvent":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/SyntheticClipboardEvent.js","./SyntheticDragEvent":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/SyntheticDragEvent.js","./SyntheticEvent":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/SyntheticEvent.js","./SyntheticFocusEvent":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/SyntheticFocusEvent.js","./SyntheticKeyboardEvent":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/SyntheticKeyboardEvent.js","./SyntheticMouseEvent":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/SyntheticMouseEvent.js","./SyntheticTouchEvent":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/SyntheticTouchEvent.js","./SyntheticUIEvent":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/SyntheticUIEvent.js","./SyntheticWheelEvent":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/SyntheticWheelEvent.js","./getEventCharCode":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/getEventCharCode.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/EventListener":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/EventListener.js","fbjs/lib/emptyFunction":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/emptyFunction.js","fbjs/lib/invariant":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/invariant.js","fbjs/lib/keyOf":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/keyOf.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/SyntheticClipboardEvent.js":[function(require,module,exports){
+},{"./EventConstants":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/EventConstants.js","./EventPropagators":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/EventPropagators.js","./ReactMount":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactMount.js","./SyntheticClipboardEvent":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/SyntheticClipboardEvent.js","./SyntheticDragEvent":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/SyntheticDragEvent.js","./SyntheticEvent":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/SyntheticEvent.js","./SyntheticFocusEvent":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/SyntheticFocusEvent.js","./SyntheticKeyboardEvent":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/SyntheticKeyboardEvent.js","./SyntheticMouseEvent":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/SyntheticMouseEvent.js","./SyntheticTouchEvent":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/SyntheticTouchEvent.js","./SyntheticUIEvent":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/SyntheticUIEvent.js","./SyntheticWheelEvent":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/SyntheticWheelEvent.js","./getEventCharCode":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/getEventCharCode.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/EventListener":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/EventListener.js","fbjs/lib/emptyFunction":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/emptyFunction.js","fbjs/lib/invariant":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/invariant.js","fbjs/lib/keyOf":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/keyOf.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/SyntheticClipboardEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -15760,7 +15760,7 @@ function SyntheticClipboardEvent(dispatchConfig, dispatchMarker, nativeEvent, na
 SyntheticEvent.augmentClass(SyntheticClipboardEvent, ClipboardEventInterface);
 
 module.exports = SyntheticClipboardEvent;
-},{"./SyntheticEvent":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/SyntheticEvent.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/SyntheticCompositionEvent.js":[function(require,module,exports){
+},{"./SyntheticEvent":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/SyntheticEvent.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/SyntheticCompositionEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -15798,7 +15798,7 @@ function SyntheticCompositionEvent(dispatchConfig, dispatchMarker, nativeEvent, 
 SyntheticEvent.augmentClass(SyntheticCompositionEvent, CompositionEventInterface);
 
 module.exports = SyntheticCompositionEvent;
-},{"./SyntheticEvent":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/SyntheticEvent.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/SyntheticDragEvent.js":[function(require,module,exports){
+},{"./SyntheticEvent":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/SyntheticEvent.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/SyntheticDragEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -15836,7 +15836,7 @@ function SyntheticDragEvent(dispatchConfig, dispatchMarker, nativeEvent, nativeE
 SyntheticMouseEvent.augmentClass(SyntheticDragEvent, DragEventInterface);
 
 module.exports = SyntheticDragEvent;
-},{"./SyntheticMouseEvent":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/SyntheticMouseEvent.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/SyntheticEvent.js":[function(require,module,exports){
+},{"./SyntheticMouseEvent":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/SyntheticMouseEvent.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/SyntheticEvent.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -16016,7 +16016,7 @@ PooledClass.addPoolingTo(SyntheticEvent, PooledClass.fourArgumentPooler);
 
 module.exports = SyntheticEvent;
 }).call(this,require('_process'))
-},{"./Object.assign":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/PooledClass.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/emptyFunction":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/emptyFunction.js","fbjs/lib/warning":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/SyntheticFocusEvent.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/PooledClass.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/emptyFunction":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/emptyFunction.js","fbjs/lib/warning":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/SyntheticFocusEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -16054,7 +16054,7 @@ function SyntheticFocusEvent(dispatchConfig, dispatchMarker, nativeEvent, native
 SyntheticUIEvent.augmentClass(SyntheticFocusEvent, FocusEventInterface);
 
 module.exports = SyntheticFocusEvent;
-},{"./SyntheticUIEvent":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/SyntheticUIEvent.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/SyntheticInputEvent.js":[function(require,module,exports){
+},{"./SyntheticUIEvent":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/SyntheticUIEvent.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/SyntheticInputEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -16093,7 +16093,7 @@ function SyntheticInputEvent(dispatchConfig, dispatchMarker, nativeEvent, native
 SyntheticEvent.augmentClass(SyntheticInputEvent, InputEventInterface);
 
 module.exports = SyntheticInputEvent;
-},{"./SyntheticEvent":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/SyntheticEvent.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/SyntheticKeyboardEvent.js":[function(require,module,exports){
+},{"./SyntheticEvent":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/SyntheticEvent.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/SyntheticKeyboardEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -16179,7 +16179,7 @@ function SyntheticKeyboardEvent(dispatchConfig, dispatchMarker, nativeEvent, nat
 SyntheticUIEvent.augmentClass(SyntheticKeyboardEvent, KeyboardEventInterface);
 
 module.exports = SyntheticKeyboardEvent;
-},{"./SyntheticUIEvent":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/SyntheticUIEvent.js","./getEventCharCode":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/getEventCharCode.js","./getEventKey":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/getEventKey.js","./getEventModifierState":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/getEventModifierState.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/SyntheticMouseEvent.js":[function(require,module,exports){
+},{"./SyntheticUIEvent":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/SyntheticUIEvent.js","./getEventCharCode":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/getEventCharCode.js","./getEventKey":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/getEventKey.js","./getEventModifierState":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/getEventModifierState.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/SyntheticMouseEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -16253,7 +16253,7 @@ function SyntheticMouseEvent(dispatchConfig, dispatchMarker, nativeEvent, native
 SyntheticUIEvent.augmentClass(SyntheticMouseEvent, MouseEventInterface);
 
 module.exports = SyntheticMouseEvent;
-},{"./SyntheticUIEvent":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/SyntheticUIEvent.js","./ViewportMetrics":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ViewportMetrics.js","./getEventModifierState":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/getEventModifierState.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/SyntheticTouchEvent.js":[function(require,module,exports){
+},{"./SyntheticUIEvent":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/SyntheticUIEvent.js","./ViewportMetrics":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ViewportMetrics.js","./getEventModifierState":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/getEventModifierState.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/SyntheticTouchEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -16300,7 +16300,7 @@ function SyntheticTouchEvent(dispatchConfig, dispatchMarker, nativeEvent, native
 SyntheticUIEvent.augmentClass(SyntheticTouchEvent, TouchEventInterface);
 
 module.exports = SyntheticTouchEvent;
-},{"./SyntheticUIEvent":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/SyntheticUIEvent.js","./getEventModifierState":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/getEventModifierState.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/SyntheticUIEvent.js":[function(require,module,exports){
+},{"./SyntheticUIEvent":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/SyntheticUIEvent.js","./getEventModifierState":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/getEventModifierState.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/SyntheticUIEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -16361,7 +16361,7 @@ function SyntheticUIEvent(dispatchConfig, dispatchMarker, nativeEvent, nativeEve
 SyntheticEvent.augmentClass(SyntheticUIEvent, UIEventInterface);
 
 module.exports = SyntheticUIEvent;
-},{"./SyntheticEvent":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/SyntheticEvent.js","./getEventTarget":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/getEventTarget.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/SyntheticWheelEvent.js":[function(require,module,exports){
+},{"./SyntheticEvent":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/SyntheticEvent.js","./getEventTarget":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/getEventTarget.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/SyntheticWheelEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -16417,7 +16417,7 @@ function SyntheticWheelEvent(dispatchConfig, dispatchMarker, nativeEvent, native
 SyntheticMouseEvent.augmentClass(SyntheticWheelEvent, WheelEventInterface);
 
 module.exports = SyntheticWheelEvent;
-},{"./SyntheticMouseEvent":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/SyntheticMouseEvent.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/Transaction.js":[function(require,module,exports){
+},{"./SyntheticMouseEvent":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/SyntheticMouseEvent.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/Transaction.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -16651,7 +16651,7 @@ var Transaction = {
 
 module.exports = Transaction;
 }).call(this,require('_process'))
-},{"_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/invariant.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ViewportMetrics.js":[function(require,module,exports){
+},{"_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/invariant.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ViewportMetrics.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -16679,7 +16679,7 @@ var ViewportMetrics = {
 };
 
 module.exports = ViewportMetrics;
-},{}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/accumulateInto.js":[function(require,module,exports){
+},{}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/accumulateInto.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -16741,7 +16741,7 @@ function accumulateInto(current, next) {
 
 module.exports = accumulateInto;
 }).call(this,require('_process'))
-},{"_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/invariant.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/adler32.js":[function(require,module,exports){
+},{"_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/invariant.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/adler32.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -16784,7 +16784,7 @@ function adler32(data) {
 }
 
 module.exports = adler32;
-},{}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/canDefineProperty.js":[function(require,module,exports){
+},{}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/canDefineProperty.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -16811,7 +16811,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = canDefineProperty;
 }).call(this,require('_process'))
-},{"_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/dangerousStyleValue.js":[function(require,module,exports){
+},{"_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/dangerousStyleValue.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -16867,7 +16867,7 @@ function dangerousStyleValue(name, value) {
 }
 
 module.exports = dangerousStyleValue;
-},{"./CSSProperty":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/CSSProperty.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/deprecated.js":[function(require,module,exports){
+},{"./CSSProperty":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/CSSProperty.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/deprecated.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -16918,7 +16918,7 @@ function deprecated(fnName, newModule, newPackage, ctx, fn) {
 
 module.exports = deprecated;
 }).call(this,require('_process'))
-},{"./Object.assign":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/Object.assign.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/escapeTextContentForBrowser.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/Object.assign.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/escapeTextContentForBrowser.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -16957,7 +16957,7 @@ function escapeTextContentForBrowser(text) {
 }
 
 module.exports = escapeTextContentForBrowser;
-},{}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/findDOMNode.js":[function(require,module,exports){
+},{}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/findDOMNode.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -17009,7 +17009,7 @@ function findDOMNode(componentOrElement) {
 
 module.exports = findDOMNode;
 }).call(this,require('_process'))
-},{"./ReactCurrentOwner":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactCurrentOwner.js","./ReactInstanceMap":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactInstanceMap.js","./ReactMount":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactMount.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/flattenChildren.js":[function(require,module,exports){
+},{"./ReactCurrentOwner":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactCurrentOwner.js","./ReactInstanceMap":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactInstanceMap.js","./ReactMount":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactMount.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/flattenChildren.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -17060,7 +17060,7 @@ function flattenChildren(children) {
 
 module.exports = flattenChildren;
 }).call(this,require('_process'))
-},{"./traverseAllChildren":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/traverseAllChildren.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/forEachAccumulated.js":[function(require,module,exports){
+},{"./traverseAllChildren":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/traverseAllChildren.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/forEachAccumulated.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -17090,7 +17090,7 @@ var forEachAccumulated = function (arr, cb, scope) {
 };
 
 module.exports = forEachAccumulated;
-},{}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/getEventCharCode.js":[function(require,module,exports){
+},{}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/getEventCharCode.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -17141,7 +17141,7 @@ function getEventCharCode(nativeEvent) {
 }
 
 module.exports = getEventCharCode;
-},{}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/getEventKey.js":[function(require,module,exports){
+},{}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/getEventKey.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -17245,7 +17245,7 @@ function getEventKey(nativeEvent) {
 }
 
 module.exports = getEventKey;
-},{"./getEventCharCode":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/getEventCharCode.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/getEventModifierState.js":[function(require,module,exports){
+},{"./getEventCharCode":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/getEventCharCode.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/getEventModifierState.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -17290,7 +17290,7 @@ function getEventModifierState(nativeEvent) {
 }
 
 module.exports = getEventModifierState;
-},{}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/getEventTarget.js":[function(require,module,exports){
+},{}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/getEventTarget.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -17320,7 +17320,7 @@ function getEventTarget(nativeEvent) {
 }
 
 module.exports = getEventTarget;
-},{}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/getIteratorFn.js":[function(require,module,exports){
+},{}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/getIteratorFn.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -17361,7 +17361,7 @@ function getIteratorFn(maybeIterable) {
 }
 
 module.exports = getIteratorFn;
-},{}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/getNodeForCharacterOffset.js":[function(require,module,exports){
+},{}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/getNodeForCharacterOffset.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -17435,7 +17435,7 @@ function getNodeForCharacterOffset(root, offset) {
 }
 
 module.exports = getNodeForCharacterOffset;
-},{}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/getTextContentAccessor.js":[function(require,module,exports){
+},{}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/getTextContentAccessor.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -17469,7 +17469,7 @@ function getTextContentAccessor() {
 }
 
 module.exports = getTextContentAccessor;
-},{"fbjs/lib/ExecutionEnvironment":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/ExecutionEnvironment.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/instantiateReactComponent.js":[function(require,module,exports){
+},{"fbjs/lib/ExecutionEnvironment":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/ExecutionEnvironment.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/instantiateReactComponent.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -17584,7 +17584,7 @@ function instantiateReactComponent(node) {
 
 module.exports = instantiateReactComponent;
 }).call(this,require('_process'))
-},{"./Object.assign":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/Object.assign.js","./ReactCompositeComponent":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactCompositeComponent.js","./ReactEmptyComponent":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactEmptyComponent.js","./ReactNativeComponent":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactNativeComponent.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/isEventSupported.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/Object.assign.js","./ReactCompositeComponent":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactCompositeComponent.js","./ReactEmptyComponent":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactEmptyComponent.js","./ReactNativeComponent":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactNativeComponent.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/isEventSupported.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -17645,7 +17645,7 @@ function isEventSupported(eventNameSuffix, capture) {
 }
 
 module.exports = isEventSupported;
-},{"fbjs/lib/ExecutionEnvironment":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/ExecutionEnvironment.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/isTextInputElement.js":[function(require,module,exports){
+},{"fbjs/lib/ExecutionEnvironment":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/ExecutionEnvironment.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/isTextInputElement.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -17686,7 +17686,7 @@ function isTextInputElement(elem) {
 }
 
 module.exports = isTextInputElement;
-},{}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/onlyChild.js":[function(require,module,exports){
+},{}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/onlyChild.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -17722,7 +17722,7 @@ function onlyChild(children) {
 
 module.exports = onlyChild;
 }).call(this,require('_process'))
-},{"./ReactElement":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactElement.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/invariant.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/quoteAttributeValueForBrowser.js":[function(require,module,exports){
+},{"./ReactElement":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactElement.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/invariant.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/quoteAttributeValueForBrowser.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -17749,7 +17749,7 @@ function quoteAttributeValueForBrowser(value) {
 }
 
 module.exports = quoteAttributeValueForBrowser;
-},{"./escapeTextContentForBrowser":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/escapeTextContentForBrowser.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/renderSubtreeIntoContainer.js":[function(require,module,exports){
+},{"./escapeTextContentForBrowser":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/escapeTextContentForBrowser.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/renderSubtreeIntoContainer.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -17766,7 +17766,7 @@ module.exports = quoteAttributeValueForBrowser;
 var ReactMount = require('./ReactMount');
 
 module.exports = ReactMount.renderSubtreeIntoContainer;
-},{"./ReactMount":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactMount.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/setInnerHTML.js":[function(require,module,exports){
+},{"./ReactMount":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactMount.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/setInnerHTML.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -17857,7 +17857,7 @@ if (ExecutionEnvironment.canUseDOM) {
 }
 
 module.exports = setInnerHTML;
-},{"fbjs/lib/ExecutionEnvironment":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/ExecutionEnvironment.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/setTextContent.js":[function(require,module,exports){
+},{"fbjs/lib/ExecutionEnvironment":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/ExecutionEnvironment.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/setTextContent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -17898,7 +17898,7 @@ if (ExecutionEnvironment.canUseDOM) {
 }
 
 module.exports = setTextContent;
-},{"./escapeTextContentForBrowser":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/escapeTextContentForBrowser.js","./setInnerHTML":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/setInnerHTML.js","fbjs/lib/ExecutionEnvironment":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/ExecutionEnvironment.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/shouldUpdateReactComponent.js":[function(require,module,exports){
+},{"./escapeTextContentForBrowser":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/escapeTextContentForBrowser.js","./setInnerHTML":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/setInnerHTML.js","fbjs/lib/ExecutionEnvironment":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/ExecutionEnvironment.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/shouldUpdateReactComponent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -17942,7 +17942,7 @@ function shouldUpdateReactComponent(prevElement, nextElement) {
 }
 
 module.exports = shouldUpdateReactComponent;
-},{}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/traverseAllChildren.js":[function(require,module,exports){
+},{}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/traverseAllChildren.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -18134,7 +18134,7 @@ function traverseAllChildren(children, callback, traverseContext) {
 
 module.exports = traverseAllChildren;
 }).call(this,require('_process'))
-},{"./ReactCurrentOwner":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactCurrentOwner.js","./ReactElement":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactElement.js","./ReactInstanceHandles":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/ReactInstanceHandles.js","./getIteratorFn":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/getIteratorFn.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/validateDOMNesting.js":[function(require,module,exports){
+},{"./ReactCurrentOwner":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactCurrentOwner.js","./ReactElement":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactElement.js","./ReactInstanceHandles":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/ReactInstanceHandles.js","./getIteratorFn":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/getIteratorFn.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/validateDOMNesting.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2015, Facebook, Inc.
@@ -18500,7 +18500,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = validateDOMNesting;
 }).call(this,require('_process'))
-},{"./Object.assign":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/Object.assign.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/emptyFunction":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/emptyFunction.js","fbjs/lib/warning":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/EventListener.js":[function(require,module,exports){
+},{"./Object.assign":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/Object.assign.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/emptyFunction":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/emptyFunction.js","fbjs/lib/warning":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/warning.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/EventListener.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -18587,7 +18587,7 @@ var EventListener = {
 
 module.exports = EventListener;
 }).call(this,require('_process'))
-},{"./emptyFunction":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/emptyFunction.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/ExecutionEnvironment.js":[function(require,module,exports){
+},{"./emptyFunction":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/emptyFunction.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/ExecutionEnvironment.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -18624,7 +18624,7 @@ var ExecutionEnvironment = {
 };
 
 module.exports = ExecutionEnvironment;
-},{}],"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/camelize.js":[function(require,module,exports){
+},{}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/camelize.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -18657,7 +18657,7 @@ function camelize(string) {
 }
 
 module.exports = camelize;
-},{}],"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/camelizeStyleName.js":[function(require,module,exports){
+},{}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/camelizeStyleName.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -18698,7 +18698,7 @@ function camelizeStyleName(string) {
 }
 
 module.exports = camelizeStyleName;
-},{"./camelize":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/camelize.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/containsNode.js":[function(require,module,exports){
+},{"./camelize":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/camelize.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/containsNode.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -18754,7 +18754,7 @@ function containsNode(_x, _x2) {
 }
 
 module.exports = containsNode;
-},{"./isTextNode":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/isTextNode.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/createArrayFromMixed.js":[function(require,module,exports){
+},{"./isTextNode":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/isTextNode.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/createArrayFromMixed.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -18840,7 +18840,7 @@ function createArrayFromMixed(obj) {
 }
 
 module.exports = createArrayFromMixed;
-},{"./toArray":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/toArray.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/createNodesFromMarkup.js":[function(require,module,exports){
+},{"./toArray":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/toArray.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/createNodesFromMarkup.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -18927,7 +18927,7 @@ function createNodesFromMarkup(markup, handleScript) {
 
 module.exports = createNodesFromMarkup;
 }).call(this,require('_process'))
-},{"./ExecutionEnvironment":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/ExecutionEnvironment.js","./createArrayFromMixed":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/createArrayFromMixed.js","./getMarkupWrap":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/getMarkupWrap.js","./invariant":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/invariant.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/emptyFunction.js":[function(require,module,exports){
+},{"./ExecutionEnvironment":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/ExecutionEnvironment.js","./createArrayFromMixed":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/createArrayFromMixed.js","./getMarkupWrap":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/getMarkupWrap.js","./invariant":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/invariant.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/emptyFunction.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -18966,7 +18966,7 @@ emptyFunction.thatReturnsArgument = function (arg) {
 };
 
 module.exports = emptyFunction;
-},{}],"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/emptyObject.js":[function(require,module,exports){
+},{}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/emptyObject.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -18989,7 +18989,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = emptyObject;
 }).call(this,require('_process'))
-},{"_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/focusNode.js":[function(require,module,exports){
+},{"_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/focusNode.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -19016,7 +19016,7 @@ function focusNode(node) {
 }
 
 module.exports = focusNode;
-},{}],"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/getActiveElement.js":[function(require,module,exports){
+},{}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/getActiveElement.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -19050,7 +19050,7 @@ function getActiveElement() /*?DOMElement*/{
 }
 
 module.exports = getActiveElement;
-},{}],"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/getMarkupWrap.js":[function(require,module,exports){
+},{}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/getMarkupWrap.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -19148,7 +19148,7 @@ function getMarkupWrap(nodeName) {
 
 module.exports = getMarkupWrap;
 }).call(this,require('_process'))
-},{"./ExecutionEnvironment":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/ExecutionEnvironment.js","./invariant":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/invariant.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/getUnboundedScrollPosition.js":[function(require,module,exports){
+},{"./ExecutionEnvironment":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/ExecutionEnvironment.js","./invariant":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/invariant.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/getUnboundedScrollPosition.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -19187,7 +19187,7 @@ function getUnboundedScrollPosition(scrollable) {
 }
 
 module.exports = getUnboundedScrollPosition;
-},{}],"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/hyphenate.js":[function(require,module,exports){
+},{}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/hyphenate.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -19221,7 +19221,7 @@ function hyphenate(string) {
 }
 
 module.exports = hyphenate;
-},{}],"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/hyphenateStyleName.js":[function(require,module,exports){
+},{}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/hyphenateStyleName.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -19261,7 +19261,7 @@ function hyphenateStyleName(string) {
 }
 
 module.exports = hyphenateStyleName;
-},{"./hyphenate":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/hyphenate.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/invariant.js":[function(require,module,exports){
+},{"./hyphenate":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/hyphenate.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/invariant.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -19313,7 +19313,7 @@ var invariant = function (condition, format, a, b, c, d, e, f) {
 
 module.exports = invariant;
 }).call(this,require('_process'))
-},{"_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/isNode.js":[function(require,module,exports){
+},{"_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/isNode.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -19337,7 +19337,7 @@ function isNode(object) {
 }
 
 module.exports = isNode;
-},{}],"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/isTextNode.js":[function(require,module,exports){
+},{}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/isTextNode.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -19363,7 +19363,7 @@ function isTextNode(object) {
 }
 
 module.exports = isTextNode;
-},{"./isNode":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/isNode.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/keyMirror.js":[function(require,module,exports){
+},{"./isNode":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/isNode.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/keyMirror.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -19414,7 +19414,7 @@ var keyMirror = function (obj) {
 
 module.exports = keyMirror;
 }).call(this,require('_process'))
-},{"./invariant":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/invariant.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/keyOf.js":[function(require,module,exports){
+},{"./invariant":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/invariant.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/keyOf.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -19450,7 +19450,7 @@ var keyOf = function (oneKeyObj) {
 };
 
 module.exports = keyOf;
-},{}],"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/mapObject.js":[function(require,module,exports){
+},{}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/mapObject.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -19502,7 +19502,7 @@ function mapObject(object, callback, context) {
 }
 
 module.exports = mapObject;
-},{}],"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/memoizeStringOnly.js":[function(require,module,exports){
+},{}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/memoizeStringOnly.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -19534,7 +19534,7 @@ function memoizeStringOnly(callback) {
 }
 
 module.exports = memoizeStringOnly;
-},{}],"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/performance.js":[function(require,module,exports){
+},{}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/performance.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -19558,7 +19558,7 @@ if (ExecutionEnvironment.canUseDOM) {
 }
 
 module.exports = performance || {};
-},{"./ExecutionEnvironment":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/ExecutionEnvironment.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/performanceNow.js":[function(require,module,exports){
+},{"./ExecutionEnvironment":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/ExecutionEnvironment.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/performanceNow.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -19588,7 +19588,7 @@ if (!curPerformance || !curPerformance.now) {
 var performanceNow = curPerformance.now.bind(curPerformance);
 
 module.exports = performanceNow;
-},{"./performance":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/performance.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/shallowEqual.js":[function(require,module,exports){
+},{"./performance":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/performance.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/shallowEqual.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -19639,7 +19639,7 @@ function shallowEqual(objA, objB) {
 }
 
 module.exports = shallowEqual;
-},{}],"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/toArray.js":[function(require,module,exports){
+},{}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/toArray.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -19699,7 +19699,7 @@ function toArray(obj) {
 
 module.exports = toArray;
 }).call(this,require('_process'))
-},{"./invariant":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/invariant.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/warning.js":[function(require,module,exports){
+},{"./invariant":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/invariant.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/warning.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -19759,12 +19759,12 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = warning;
 }).call(this,require('_process'))
-},{"./emptyFunction":"/Users/wmichelin/youtube-api-testing/node_modules/react/node_modules/fbjs/lib/emptyFunction.js","_process":"/Users/wmichelin/youtube-api-testing/node_modules/browserify/node_modules/process/browser.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/react/react.js":[function(require,module,exports){
+},{"./emptyFunction":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/node_modules/fbjs/lib/emptyFunction.js","_process":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/browserify/node_modules/process/browser.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/react.js":[function(require,module,exports){
 'use strict';
 
 module.exports = require('./lib/React');
 
-},{"./lib/React":"/Users/wmichelin/youtube-api-testing/node_modules/react/lib/React.js"}],"/Users/wmichelin/youtube-api-testing/node_modules/underscore/underscore.js":[function(require,module,exports){
+},{"./lib/React":"/Users/wmichelin/YoutubeMusicPlayer/node_modules/react/lib/React.js"}],"/Users/wmichelin/YoutubeMusicPlayer/node_modules/underscore/underscore.js":[function(require,module,exports){
 //     Underscore.js 1.8.3
 //     http://underscorejs.org
 //     (c) 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
@@ -21314,4 +21314,4 @@ module.exports = require('./lib/React');
   }
 }.call(this));
 
-},{}]},{},["/Users/wmichelin/youtube-api-testing/js/main.jsx"]);
+},{}]},{},["/Users/wmichelin/YoutubeMusicPlayer/js/main.jsx"]);
