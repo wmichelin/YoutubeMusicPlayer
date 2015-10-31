@@ -6,7 +6,7 @@ var Sidebar = require('react-sidebar');
 var styles = {
   contentHeaderMenuLink: {
     textDecoration: 'none',
-    color: 'white',
+    color: 'black',
     padding: 8
   },
   content: {
@@ -22,9 +22,9 @@ var App = React.createClass({displayName: "App",
     };
   },
 
-  onSetSidebarOpen: function(open) {
+  onSetOpen: function(open) {
     this.setState({
-      sidebarOpen: open
+      open: open
     });
   },
 
@@ -38,15 +38,20 @@ var App = React.createClass({displayName: "App",
   },
 
   componentWillUnmount: function() {
-    this.state
-      .mql
-      .removeListener(this.mediaQueryChanged);
+    this.state.mql.removeListener(this.mediaQueryChanged);
   },
 
   mediaQueryChanged: function() {
     this.setState({
-      sidebarDocked: this.state.mql.matches
+      docked: this.state.mql.matches
     });
+  },
+  toggleOpen(ev) {
+    this.setState({open: !this.state.open});
+
+    if (ev) {
+      ev.preventDefault();
+    }
   },
 
   render: function() {
@@ -54,14 +59,35 @@ var App = React.createClass({displayName: "App",
       React.createElement(SongList, null)
     );
 
+    var contentHeader = (
+      React.createElement("span", null, 
+        !this.state.docked &&
+          React.createElement("a", {onClick: this.toggleOpen, href: "#", style: styles.contentHeaderMenuLink}, "PRESS TO OPEN"), 
+        React.createElement("span", null, " Responsive React Sidebar")
+      )
+    )
+
+    var sidebarProps = {
+      sidebar: sidebarContent,
+      docked: this.state.docked,
+      open: this.state.open,
+      onSetOpen: this.onSetOpen
+    }
+
+
     return (
-      React.createElement(Sidebar, {sidebar: sidebarContent, open: this.state.sidebarOpen, docked: this.state.sidebarDocked, onSetOpen: this.onSetSidebarOpen}, 
-        React.createElement("b", null, "Main content")
+      React.createElement(Sidebar, React.__spread({},  sidebarProps), 
+        React.createElement("div", {className: "sidebar-content"}, 
+        contentHeader
+        )
       )
     );
+
+
+
   }
 
-  // getInitialState: function() {
+  //getInitialState: function() {
   //   return {
   //     sidebarOpen: false
   //   }

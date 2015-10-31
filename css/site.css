@@ -1,4 +1,4 @@
-body, html {
+/*body, html {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -11,6 +11,10 @@ body, html {
 
 .block {
   display: block;
+}*/
+
+body {
+  background-color: white;
 }
 
 span {
@@ -19,6 +23,11 @@ span {
 
 img.album-image {
   height: 100px
+}
+
+
+.songlist-container {
+  background-color: red;
 }
 
 /*.sidebar{

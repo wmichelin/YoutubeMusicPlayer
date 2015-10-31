@@ -5,7 +5,7 @@ var Sidebar = require('react-sidebar');
 var styles = {
   contentHeaderMenuLink: {
     textDecoration: 'none',
-    color: 'white',
+    color: 'black',
     padding: 8
   },
   content: {
@@ -21,9 +21,9 @@ var App = React.createClass({
     };
   },
 
-  onSetSidebarOpen: function(open) {
+  onSetOpen: function(open) {
     this.setState({
-      sidebarOpen: open
+      open: open
     });
   },
 
@@ -37,15 +37,20 @@ var App = React.createClass({
   },
 
   componentWillUnmount: function() {
-    this.state
-      .mql
-      .removeListener(this.mediaQueryChanged);
+    this.state.mql.removeListener(this.mediaQueryChanged);
   },
 
   mediaQueryChanged: function() {
     this.setState({
-      sidebarDocked: this.state.mql.matches
+      docked: this.state.mql.matches
     });
+  },
+  toggleOpen(ev) {
+    this.setState({open: !this.state.open});
+
+    if (ev) {
+      ev.preventDefault();
+    }
   },
 
   render: function() {
@@ -53,14 +58,35 @@ var App = React.createClass({
       <SongList/>
     );
 
+    var contentHeader = (
+      <span>
+        {!this.state.docked &&
+          <a onClick={this.toggleOpen} href="#" style={styles.contentHeaderMenuLink}>PRESS TO OPEN</a>}
+        <span> Responsive React Sidebar</span>
+      </span>
+    )
+
+    var sidebarProps = {
+      sidebar: sidebarContent,
+      docked: this.state.docked,
+      open: this.state.open,
+      onSetOpen: this.onSetOpen
+    }
+
+
     return (
-      <Sidebar sidebar={sidebarContent} open={this.state.sidebarOpen} docked={this.state.sidebarDocked} onSetOpen={this.onSetSidebarOpen}>
-        <b>Main content</b>
+      <Sidebar {...sidebarProps}>
+        <div className="sidebar-content">
+        {contentHeader}
+        </div>
       </Sidebar>
     );
+
+
+
   }
 
-  // getInitialState: function() {
+  //getInitialState: function() {
   //   return {
   //     sidebarOpen: false
   //   }
