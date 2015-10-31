@@ -1,0 +1,39 @@
+{
+  "name": "youtube-api-testing",
+  "version": "1.0.0",
+  "description": "youtube song api",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wmichelin/youtube-api-testing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wmichelin/youtube-api-testing/issues"
+  },
+  "homepage": "https://github.com/wmichelin/youtube-api-testing#readme",
+  "dependencies": {
+    "browserify": "^12.0.1",
+    "colors": "^1.1.2",
+    "gulp": "^3.9.0",
+    "gulp-notify": "^2.2.0",
+    "is-relative": "^0.2.1",
+    "lodash": "^3.10.1",
+    "lodash._basecopy": "^3.0.1",
+    "lodash.isarray": "^3.0.4",
+    "lodash.keys": "^3.1.2",
+    "query-string": "^3.0.0",
+    "react": "^0.14.1",
+    "react-dom": "^0.14.1",
+    "react-sidebar": "^2.0.0",
+    "reactify": "^1.1.1",
+    "spotify-web-api-js": "^0.15.0",
+    "underscore": "^1.8.3",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.6.0"
+  }
+}

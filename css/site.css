@@ -1,5 +1,8 @@
-body {
-  text-align: center;
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .inline-block{
@@ -9,3 +12,30 @@ body {
 .block {
   display: block;
 }
+
+span {
+  margin-right: 10px;
+}
+
+img.album-image {
+  height: 100px
+}
+
+/*.sidebar{
+  position: absolute;
+  background-color: red;
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  right: 80%;
+}
+
+.video-container{
+  position: absolute;
+  left: 20%;
+  right: 0;
+  background-color: green;
+  display: inline-block;
+  height: 100%;
+
+}*/

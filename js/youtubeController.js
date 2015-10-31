@@ -23,7 +23,6 @@ var youtubeController = (function() {
     });
 
     testInput.focus();
-  }
 
 
   function executeQuery(query) {
