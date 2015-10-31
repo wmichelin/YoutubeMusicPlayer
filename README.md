@@ -42,3 +42,7 @@ If you'd like to set up livereload, to modify CSS without reloading the page, en
 Checkout [livereload](http://livereload.com/) to learn more about livereload (It's a pretty cool library).
 
 Hope you enjoy! Make a PR or open an issue if you have any ideas
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/wmichelin/youtubemusicplayer/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
