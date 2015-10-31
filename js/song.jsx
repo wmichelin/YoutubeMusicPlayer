@@ -11,13 +11,12 @@ var Song = React.createClass({
   render: function() {
     return (
       <div className="song-wrapper">
-        <span className="song-title">
+        <div className="song-title">
           {this.props.title}
-        </span>
-        <span className="song-artist">
+        </div>
+        <div className="song-artist">
           {this.props.artist}
-        </span>
-
+        </div>
         <img className="album-image" src={this.props.image_url}></img>
       </div>
     );

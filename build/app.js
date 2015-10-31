@@ -218,13 +218,12 @@ var Song = React.createClass({displayName: "Song",
   render: function() {
     return (
       React.createElement("div", {className: "song-wrapper"}, 
-        React.createElement("span", {className: "song-title"}, 
+        React.createElement("div", {className: "song-title"}, 
           this.props.title
         ), 
-        React.createElement("span", {className: "song-artist"}, 
+        React.createElement("div", {className: "song-artist"}, 
           this.props.artist
         ), 
-
         React.createElement("img", {className: "album-image", src: this.props.image_url})
       )
     );

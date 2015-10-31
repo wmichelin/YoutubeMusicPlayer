@@ -22,12 +22,20 @@ span {
 }
 
 img.album-image {
-  height: 100px
+  height: 100px;
+  width: 100px;
+}
+
+.song-title, .song-artist{
+  background-color: green;
+  display: inline-block;
 }
 
 
 .songlist-container {
   background-color: red;
+  width: 300px;
+  overflow: hidden;
 }
 
 /*.sidebar{
