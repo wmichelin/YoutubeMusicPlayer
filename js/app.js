@@ -1,26 +1,34 @@
-var youtubeController = function() {
+var youtubeController = (function() {
+  var inputHasFocus = false;
 
-  this.initialize = function() {
+  var initialize = function(player) {
+    var testInput = $('#testInput');
+    var testButton = $('#testButton');
 
-    $('#testButton').on('click', function() {
-      var queryString = $('#testInput').val();
-    
-      executeQuery(queryString).done(function(response){
-        response.items.forEach(function(item){
-          console.log(item);
-        });
-      });
+    setFocusAndKeyboardFunctionality();
+    var player = player;
+    $(testButton).on('click', getAndExecuteQuery);
+    testInput.focus();
+  }
+
+  function getAndExecuteQuery() {
+    var queryString = $(testInput).val();
+    executeQuery(queryString).done(playNewVideo)
+  }
+
+  function playNewVideo(results) {
+    player.loadVideoById({
+      'videoId': results.items[0].id.videoId,
+      'suggestedQuality': 'large'
     });
 
-    $(this).on('testEvent', function() {
-      console.log('custom event worked');
-    });
+    testInput.focus();
   }
 
 
   function executeQuery(query) {
-    return new Promise(function(resolve, reject){
-      var url = 'https://www.googleapis.com/youtube/v3/search?part=snippet&key=AIzaSyBGW3_8YPM9IkIFry4QuisFUgvdK_mgtOA&q=' + query;
+    return new Promise(function(resolve, reject) {
+      var url = 'https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=1&key=AIzaSyBGW3_8YPM9IkIFry4QuisFUgvdK_mgtOA&q=' + query;
       $.ajax({
         type: "GET",
         url: url,
@@ -31,7 +39,23 @@ var youtubeController = function() {
     });
   }
 
-  return {
-    initialize: self.initialize
+  function setFocusAndKeyboardFunctionality() {
+    $(testInput).on('blur', function(){
+      inputHasFocus = false;
+    });
+
+    $(document).on('keypress', function(e){
+      if(e.which === 13) {
+        $(testButton).click();
+      }
+      if(!inputHasFocus) {
+        testInput.focus();
+        inputHasFocus = true;
+      }
+    });
   }
-}();
+
+  return {
+    initialize: initialize
+  }
+})();
