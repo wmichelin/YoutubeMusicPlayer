@@ -1,19 +1,24 @@
 var youtubeController = (function() {
   var inputHasFocus = false;
+  var inputTag = $('.search-bar');
+  var testButton = $('#testButton');
+
 
   var initialize = function(player) {
-    var testInput = $('#testInput');
-    var testButton = $('#testButton');
-
     setFocusAndKeyboardFunctionality();
     var player = player;
     $(testButton).on('click', getAndExecuteQuery);
-    testInput.focus();
+    inputTag.focus();
   }
 
+
   function getAndExecuteQuery() {
-    var queryString = $(testInput).val();
-    executeQuery(queryString).done(playNewVideo)
+    var queryString = $(inputTag).val();
+    executeQuery(queryString).done(playNewVideo);
+  }
+
+  function playVideoByName(name) {
+    executeQuery(name).done(playNewVideo);
   }
 
   function playNewVideo(results) {
@@ -22,7 +27,8 @@ var youtubeController = (function() {
       'suggestedQuality': 'large'
     });
 
-    testInput.focus();
+    inputTag.focus();
+  }
 
 
   function executeQuery(query) {
@@ -39,22 +45,26 @@ var youtubeController = (function() {
   }
 
   function setFocusAndKeyboardFunctionality() {
-    $(testInput).on('blur', function(){
+    $(inputTag).on('blur', function() {
       inputHasFocus = false;
     });
 
-    $(document).on('keypress', function(e){
-      if(e.which === 13) {
-        $(testButton).click();
+    $(document).on('keypress', function(e) {
+      console.log(e);
+      if (e.which === 13) {
+        // $(testButton).click();
       }
-      if(!inputHasFocus) {
-        testInput.focus();
+      if (!inputHasFocus) {
+        inputTag.focus();
         inputHasFocus = true;
       }
     });
   }
 
+
   return {
-    initialize: initialize
+    initialize: initialize,
+    playVideoByName: playVideoByName
   }
+
 })();

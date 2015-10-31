@@ -26,7 +26,9 @@ var App = React.createClass({
       open: open
     });
   },
+  componentDidMount: function() {
 
+  },
   componentWillMount: function() {
     var mql = window.matchMedia(`(min-width: 800px)`);
     mql.addListener(this.mediaQueryChanged);
@@ -62,7 +64,7 @@ var App = React.createClass({
       <span>
         {!this.state.docked &&
           <a onClick={this.toggleOpen} href="#" style={styles.contentHeaderMenuLink}>PRESS TO OPEN</a>}
-        <span> Responsive React Sidebar</span>
+        <span> </span>
       </span>
     )
 
@@ -76,8 +78,13 @@ var App = React.createClass({
 
     return (
       <Sidebar {...sidebarProps}>
-        <div className="sidebar-content">
-        {contentHeader}
+        <div class="sidebar-wrapper">
+          <div className="sidebar-content">
+          {contentHeader}
+          </div>
+        </div>
+        <div className="main-content">
+          <div id="player"></div>
         </div>
       </Sidebar>
     );
@@ -86,36 +93,6 @@ var App = React.createClass({
 
   }
 
-  //getInitialState: function() {
-  //   return {
-  //     sidebarOpen: false
-  //   }
-  // },
-  // onSetSidebarOpen: function(open) {
-  //   this.setState({
-  //     sidebarOpen: open
-  //   });
-  // },
-  // render: function() {
-  //   var sidebarContent = <div>test</div>
-  //
-  //   return (
-  //     // <div className="container">
-  //     //   <div className="sidebar">
-  //     //     .sidebar {sidebarContent}
-  //     //   </div>
-  //     //   <div className="video-container">
-  //     //     .video-container
-  //     //   </div>
-  //     // </div>
-  //     <Sidebar sidebar={sidebarContent}
-  //        open={this.state.sidebarOpen}
-  //        onSetOpen={this.onSetSidebarOpen}>
-  //        <b>Main content</b>
-  //     </Sidebar>
-  //
-  //   );
-  // }
 });
 
 module.exports = App;

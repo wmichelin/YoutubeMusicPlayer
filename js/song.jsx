@@ -5,12 +5,25 @@ var Song = React.createClass({
     return {
       title: "Title",
       artist: "Artist",
-      image_url: ""
+      image_url: "",
+      key: -1,
+      id: -1
     }
+  },
+  handleClick: function() {
+
+    if(this.props.id != -1) {
+      youtubeController.playVideoByName(this.createQueryString());
+    }
+
+    // alert(this.createQueryString());
+  },
+  createQueryString: function() {
+    return this.props.title + " " + this.props.artist;
   },
   render: function() {
     return (
-      <div className="song-wrapper">
+      <div onClick={this.handleClick} className="song-wrapper">
         <div className="song-text-wrapper">
           <div className="song-title">
             {this.props.title}

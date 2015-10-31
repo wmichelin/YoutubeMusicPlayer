@@ -27,7 +27,9 @@ var App = React.createClass({displayName: "App",
       open: open
     });
   },
+  componentDidMount: function() {
 
+  },
   componentWillMount: function() {
     var mql = window.matchMedia(`(min-width: 800px)`);
     mql.addListener(this.mediaQueryChanged);
@@ -63,7 +65,7 @@ var App = React.createClass({displayName: "App",
       React.createElement("span", null, 
         !this.state.docked &&
           React.createElement("a", {onClick: this.toggleOpen, href: "#", style: styles.contentHeaderMenuLink}, "PRESS TO OPEN"), 
-        React.createElement("span", null, " Responsive React Sidebar")
+        React.createElement("span", null, " ")
       )
     )
 
@@ -77,8 +79,13 @@ var App = React.createClass({displayName: "App",
 
     return (
       React.createElement(Sidebar, React.__spread({},  sidebarProps), 
-        React.createElement("div", {className: "sidebar-content"}, 
-        contentHeader
+        React.createElement("div", {class: "sidebar-wrapper"}, 
+          React.createElement("div", {className: "sidebar-content"}, 
+          contentHeader
+          )
+        ), 
+        React.createElement("div", {className: "main-content"}, 
+          React.createElement("div", {id: "player"})
         )
       )
     );
@@ -87,36 +94,6 @@ var App = React.createClass({displayName: "App",
 
   }
 
-  //getInitialState: function() {
-  //   return {
-  //     sidebarOpen: false
-  //   }
-  // },
-  // onSetSidebarOpen: function(open) {
-  //   this.setState({
-  //     sidebarOpen: open
-  //   });
-  // },
-  // render: function() {
-  //   var sidebarContent = <div>test</div>
-  //
-  //   return (
-  //     // <div className="container">
-  //     //   <div className="sidebar">
-  //     //     .sidebar {sidebarContent}
-  //     //   </div>
-  //     //   <div className="video-container">
-  //     //     .video-container
-  //     //   </div>
-  //     // </div>
-  //     <Sidebar sidebar={sidebarContent}
-  //        open={this.state.sidebarOpen}
-  //        onSetOpen={this.onSetSidebarOpen}>
-  //        <b>Main content</b>
-  //     </Sidebar>
-  //
-  //   );
-  // }
 });
 
 module.exports = App;
@@ -144,55 +121,10 @@ var SongProvider = (function(){
 
   var getSongs = function() {
       return [{
-        "artist_id": "ARUOHVM137E74B0263",
-        "id": "SOUOYNJ13B0C708C72",
-        "artist_name": "Jazz Against The Machine",
-        "title": "Creep"
-      }, {
-        "artist_id": "ARMF4RD1187FB4916B",
-        "id": "SOETIJG130516DEBA5",
-        "artist_name": "Street Corner Symphony",
-        "title": "Creep"
-      }, {
-        "artist_id": "ARWAFBJ1187FB4F3CB",
-        "id": "SOLZEXL13AA4FC2377",
-        "artist_name": "Clan of Xymox",
-        "title": "Creep"
-      }, {
-        "artist_id": "ARMVFRS1187FB3B079",
-        "id": "SOLJAQY1312FDFC66F",
-        "artist_name": "Behind the Scenes",
-        "title": "Creep"
-      }, {
-        "artist_id": "ARUNCLK12AF7DA802E",
-        "id": "SOLUTHG1481E9EC736",
-        "artist_name": "Tracy Bryant",
-        "title": "Creep"
-      }, {
-        "artist_id": "ARGXNLK12CEB27552F",
-        "id": "SOZICGU13D11B49033",
-        "artist_name": "Daniel Mustard",
-        "title": "Creep"
-      }, {
-        "artist_id": "AR37CSL1187B9896B1",
-        "id": "SOLGMSH13773E1B756",
-        "artist_name": "Abney Park",
-        "title": "Creep"
-      }, {
-        "artist_id": "AR6P3N41187B9A8155",
-        "id": "SOVIUBB12A8C137E56",
-        "artist_name": "Lambretta",
-        "title": "Creep"
-      }, {
-        "artist_id": "ARPVRCT1456AA7AF63",
-        "id": "SOBZSHJ1460D6E0CA5",
-        "artist_name": "Jinkx Monsoon",
-        "title": "Creep"
-      }, {
-        "artist_id": "ARTKZHI13A8B60B813",
-        "id": "SOYSRLA14211C35115",
-        "artist_name": "Richard Cheese",
-        "title": "Creep"
+        "artist_id": "-1",
+        "key": "-1",
+        "artist_name": "",
+        "title": "Search for a song"
       }];
   }
 
@@ -212,12 +144,25 @@ var Song = React.createClass({displayName: "Song",
     return {
       title: "Title",
       artist: "Artist",
-      image_url: ""
+      image_url: "",
+      key: -1,
+      id: -1
     }
+  },
+  handleClick: function() {
+
+    if(this.props.id != -1) {
+      youtubeController.playVideoByName(this.createQueryString());
+    }
+
+    // alert(this.createQueryString());
+  },
+  createQueryString: function() {
+    return this.props.title + " " + this.props.artist;
   },
   render: function() {
     return (
-      React.createElement("div", {className: "song-wrapper"}, 
+      React.createElement("div", {onClick: this.handleClick, className: "song-wrapper"}, 
         React.createElement("div", {className: "song-text-wrapper"}, 
           React.createElement("div", {className: "song-title"}, 
             this.props.title
@@ -261,7 +206,7 @@ module.exports = {
         if (track.album.images.length > 0) {
           url = track.album.images[0].url;
         }
-
+        
         formattedResults.push({
           key: track.id,
           title: track.name,
@@ -328,9 +273,10 @@ var SongList = React.createClass({displayName: "SongList",
       .state
       .songs
       .forEach(function(song) {
+        var test = song.key
         songArray.push(
           React.createElement(Song, {
-            key: song.id, 
+            id: song.key, 
             artist: song.artist_name, 
             title: song.title, 
             image_url: song.image_url}
@@ -338,17 +284,20 @@ var SongList = React.createClass({displayName: "SongList",
         );
       });
 
+      console.log(this.state.songs);
+
     return (
-      React.createElement("div", {className: "songlist-container"}, 
-        React.createElement(SearchBar, {onUserInput: this.onUserInput, onEnterKeyPress: this.onEnterKeyPress, value: this.state.queryString}), 
-        React.createElement("div", {className: "songs"}, 
-          songArray
+      React.createElement("div", {className: "song-list-wrapper"}, 
+        React.createElement("div", {className: "songlist-container"}, 
+          React.createElement(SearchBar, {onUserInput: this.onUserInput, onEnterKeyPress: this.onEnterKeyPress, value: this.state.queryString}), 
+          React.createElement("div", {className: "songs"}, 
+            songArray
+          )
         )
       )
     );
   }
 });
-
 
 var SearchBar = React.createClass({displayName: "SearchBar",
   //only handle enter key for now

@@ -41,7 +41,3 @@ function onPlayerStateChange(event) {
 function stopVideo() {
   player.stopVideo();
 }
-
-$(function(){
-  youtubeController.initialize();
-});

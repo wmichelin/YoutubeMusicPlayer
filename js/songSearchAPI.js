@@ -24,7 +24,7 @@ module.exports = {
         if (track.album.images.length > 0) {
           url = track.album.images[0].url;
         }
-
+        
         formattedResults.push({
           key: track.id,
           title: track.name,

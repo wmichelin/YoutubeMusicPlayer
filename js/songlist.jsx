@@ -47,9 +47,10 @@ var SongList = React.createClass({
       .state
       .songs
       .forEach(function(song) {
+        var test = song.key
         songArray.push(
           <Song
-            key={song.id}
+            id={song.key}
             artist={song.artist_name}
             title={song.title}
             image_url={song.image_url}
@@ -57,17 +58,20 @@ var SongList = React.createClass({
         );
       });
 
+      console.log(this.state.songs);
+
     return (
-      <div className="songlist-container">
-        <SearchBar onUserInput={this.onUserInput} onEnterKeyPress={this.onEnterKeyPress} value={this.state.queryString}/>
-        <div className="songs">
-          {songArray}
+      <div className="song-list-wrapper">
+        <div className="songlist-container">
+          <SearchBar onUserInput={this.onUserInput} onEnterKeyPress={this.onEnterKeyPress} value={this.state.queryString}/>
+          <div className="songs">
+            {songArray}
+          </div>
         </div>
       </div>
     );
   }
 });
-
 
 var SearchBar = React.createClass({
   //only handle enter key for now

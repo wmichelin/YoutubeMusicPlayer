@@ -17,6 +17,8 @@
 
 html, body {
   background-color: #181818;
+  padding: 0;
+  margin: 0;
   color: white;
   width: 100%;
   height: 100%;
@@ -63,11 +65,19 @@ img.album-image {
 
 }
 
+
+
 .song-wrapper {
   margin-top: 5px;
   padding-top: 10px;
   padding-bottom: 8px;
   border-top: 2px solid black;
+  background-color: #282828;
+}
+
+.song-wrapper:hover {
+  color: green;
+  background-color: #333333;
 }
 
 .song-wrapper:last-child {
@@ -76,7 +86,6 @@ img.album-image {
 
 .songlist-container {
   text-align: center;
-  background-color: #282828;
   width: 300px;
   overflow: hidden;
   padding: 10px;
@@ -86,6 +95,11 @@ img.album-image {
 .search-bar{
   margin: 10px;
   font-size: 20px;
+}
+
+.song-list-wrapper {
+  background-color: #282828;
+  height: 100%;
 }
 
 /*.sidebar{
@@ -106,3 +120,8 @@ img.album-image {
   height: 100%;
 
 }*/
+.main-content{
+  /*background-color: red;*/
+  text-align: center;
+  margin-top: 150px;
+}
